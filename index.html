@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Winners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+
+    <header class="header">
+           <div class="container">
+                <div class="header_inner">
+                     <div class="header_item">
+                          <button class="nav-toggle" id="nav_toggle" type="button">
+                              <span class="nav-toggle__item">Menu</span>
+                          </button>
+                          <a href="index.html" class="header_logo">
+                             <img src="assets/images/logo.svg" alt="logo">
+                          </a>
+                          <div class="mobil_acount">
+                                  <a href="sign-in.html" class="mobil_acount_link">
+                                      <img src="assets/images/avatar.svg" alt="avatar_logo" class="mobil_acount_img">
+                                  </a>
+                              </div>
+                          <div class="header_account">
+                              <div class="account_name">
+                                 Welcome <b>Roma</b> &mdash; <a href="welcome.html" class="acount_logout">Logout</a>
+                              </div>
+                              <div class="account_balance">
+                          Your balanse: <b>P 0,00</b>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="header_item social">
+                          <div class="header_social">
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/facebook.svg" alt="facebook" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/twitter.svg" alt="twitter" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/facebook-messenger.svg" alt="messenger" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                   <a href="#" class="header_social_link">
+                                       <img src="assets/images/contacts/whatsapp.svg" alt="whatsapp" class="header_social_img">
+                                   </a>
+                              </div>
+                          </div>
+                          <dl id="sample" class="dropdown">
+                        <dt>
+                            <a>
+                                <img class="flag" src="assets/images/country/USA.svg" alt="">English
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/USA.svg" alt="">English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Francais.svg" alt="">Français
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Germany.svg" alt="">Deutsch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Italy.svg" alt="">Italiano
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Russia.svg" alt="">Русский
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Spain.svg" alt="">Español
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Ukraine.svg" alt="">Українська
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                      </div>
+                </div>
+
+                <div class="header_nav">
+                    <nav class="nav">
+                        <a class="nav_link" href="index.html" data-scroll="#">Home</a>
+                        <a class="nav_link" href="all-lotteries.html" data-scroll="#">Play all lottery</a>
+                        <a class="nav_link" href="lottery-group.html" data-scroll="#">Lottery groups</a>
+                       <a class="nav_link" href="promotions.html" data-scroll="#">Promotions</a>
+                    </nav>
+                    <div class="account">
+                        <a class="nav_link" href="sign-in.html" data-scroll="#">My account</a>
+                    </div>
+                </div>
+          </div>
+    </header>
+
+    <section class="baner">
+        <div class="container baner_wrap">
+            <div class="baner_inner">
+               <div class="baner_top">
+                   <h1 class="baner_title">
+                     <img src="assets/images/power-logo.png" alt="baner-logo" class="baner_img">
+                   </h1>
+                   <h2 class="baner_subtitle">Jackpot</h2>
+                    <p class="baner_price">$205 000 000</p>
+                    <p class="baner_text">Join the lottery winners club</p>
+                    <a href="promo-picker.html" class="baner_button">Play Now</a>
+               </div>
+                <div class="baner_bottom">
+                     <div class="baner_item">
+                         <div class="baner_logo">
+                             <img src="assets/images/alarm-white.svg" alt="alarm">
+                         </div>
+                         <p class="baner_item_text">Next Draw:</p>
+                         <p class="baner_timer">2d 13:51:59</p>
+                     </div>
+                     <div class="baner_item">
+                         <div class="baner_logo">
+                             <img src="assets/images/moneybagmoney.png" alt="alarm">
+                         </div>
+                         <p class="baner_item_text">Next Jackpot:</p>
+                         <p class="baner_timer">205 000 000</p>
+                     </div>
+                 </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="card">
+        <div class="container">
+           <div class="card_inner">
+               <div class="card_item">
+                <img src="assets/images/section_1.svg" class="card_img" alt="card">
+                <div class="card_info">
+                    <h2 class="card_title">You Pick</h2>
+                    <p class="card_description">It’s easy! Pick from over 40 official lottery games you wish to play. Then select your winning numbers.</p>
+                </div>
+                <a href="thank-you.html" class="card_link">Play Now »</a>
+           </div>
+            <div class="card_item">
+                <img src="assets/images/section_2.svg" class="card_img" alt="card">
+                <div class="card_info">
+                    <h2 class="card_title">we buy</h2>
+                    <p class="card_description">Once you’ve picked your winning numbers we’ll purchase your ticket on your behalf.</p>
+                </div>
+                <a href="#" class="card_link">More Details »</a>
+            </div>
+            <div class="card_item">
+                <img src="assets/images/section_3.svg" class="card_img" alt="card">
+                <div class="card_info">
+                    <h2 class="card_title">you win!!!</h2>
+                    <p class="card_description">When you win, we’ll automatically credit your account the full value of your winnings.</p>
+                </div>
+                <a href="#" class="card_link">Withdraw My Winnings »</a>
+            </div>
+           </div>
+       </div>
+    </section>
+
+    <section class="lottery">
+        <div class="container">
+           <h3 class="lottery_title">BIGGEST UPCOMING LOTTERY DRAWS</h3>
+            <div class="lottery_inner">
+                <div class="lottery_item">
+                    <div class="lottery_top">
+                        <div class="lottery_img">
+                            <img src="assets/images/lotto-oz.svg" alt="lotto-oz">
+                        </div>
+                        <div class="lottery_info">
+                            <div class="lottery_content">
+                                <img src="assets/images/country.svg" alt="country" class="flag">
+                                <span class="lottery_description">Mega Millions</span>
+                            </div>
+                            <div class="price">$94 000 000</div>
+                        </div>
+                    </div>
+                    <div class="lottery_bottom">
+                        <a href="promo-picker.html" class="button">Play Now</a>
+                        <div class="timer">
+                            <img src="assets/images/alarm-white.svg" alt="clock">
+                            <span class="time">1:22:01</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lottery_item">
+                    <div class="lottery_top">
+                        <div class="lottery_img">
+                            <img src="assets/images/lotto-mega.svg" alt="lotto-oz">
+                        </div>
+                        <div class="lottery_info">
+                            <div class="lottery_content">
+                                <img src="assets/images/country.svg" alt="country" class="flag">
+                                <span class="lottery_description">Mega Millions</span>
+                            </div>
+                            <div class="price">$94 000 000</div>
+                        </div>
+                    </div>
+                    <div class="lottery_bottom">
+                        <a href="promo-picker.html" class="button">Play Now</a>
+                        <div class="timer">
+                            <img src="assets/images/alarm-white.svg" alt="clock">
+                            <span class="time">1:22:01</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lottery_item">
+                    <div class="lottery_top">
+                        <div class="lottery_img">
+                            <img src="assets/images/lotto-power.svg" alt="lotto-oz">
+                        </div>
+                        <div class="lottery_info">
+                            <div class="lottery_content">
+                                <img src="assets/images/country.svg" alt="country" class="flag">
+                                <span class="lottery_description">Mega Millions</span>
+                            </div>
+                            <div class="price">$94 000 000</div>
+                        </div>
+                    </div>
+                    <div class="lottery_bottom">
+                        <a href="promo-picker.html" class="button">Play Now</a>
+                        <div class="timer">
+                            <img src="assets/images/alarm-white.svg" alt="clock">
+                            <span class="time">1:22:01</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="play">
+        <div class="container">
+           <div class="red_title">
+               <h4 class="color-title">PLAY UPCOMING LOTTERIES ONLINE</h4>
+           </div>
+            <div class="play_inner">
+                <div class="play_item">
+                    <img src="assets/images/favorites.svg" alt="favorites" class="favorites">
+                    <div class="play_img">
+                        <img src="assets/images/lotto-mega.svg" alt="mega">
+                    </div>
+                    <div class="play_content">
+                        <img src="assets/images/country.svg" alt="country" class="flag">
+                        <span class="play_description">Mega Millions</span>
+                    </div>
+                    <div class="price">$122 000 000</div>
+                    <div class="timer">
+                        <img src="assets/images/alarm-blue.svg" alt="clock">
+                        <span class="time">1:22:01</span>
+                    </div>
+
+                        <a href="#" class="button">Play Now</a>
+
+                </div>
+
+                <div class="play_item">
+                    <img src="assets/images/favorites.svg" alt="favorites" class="favorites">
+                    <div class="play_img">
+                        <img src="assets/images/lotto-mega.svg" alt="mega">
+                    </div>
+                    <div class="play_content">
+                        <img src="assets/images/country.svg" alt="country" class="flag">
+                        <span class="play_description">Mega Millions</span>
+                    </div>
+                    <div class="price">$122 000 000</div>
+                    <div class="timer">
+                        <img src="assets/images/alarm-blue.svg" alt="clock">
+                        <span class="time">1:22:01</span>
+                    </div>
+
+                        <a href="#" class="button">Play Now</a>
+
+                </div>
+
+                <div class="play_item">
+                    <img src="assets/images/favorites.svg" alt="favorites" class="favorites">
+                    <div class="play_img">
+                        <img src="assets/images/lotto-mega.svg" alt="mega">
+                    </div>
+                    <div class="play_content">
+                        <img src="assets/images/country.svg" alt="country" class="flag">
+                        <span class="play_description">Mega Millions</span>
+                    </div>
+                    <div class="price">$122 000 000</div>
+                    <div class="timer">
+                        <img src="assets/images/alarm-blue.svg" alt="clock">
+                        <span class="time">1:22:01</span>
+                    </div>
+
+                        <a href="#" class="button">Play Now</a>
+
+                </div>
+
+                <div class="play_item">
+                    <img src="assets/images/favorites.svg" alt="favorites" class="favorites">
+                    <div class="play_img">
+                        <img src="assets/images/lotto-mega.svg" alt="mega">
+                    </div>
+                    <div class="play_content">
+                        <img src="assets/images/country.svg" alt="country" class="flag">
+                        <span class="play_description">Mega Millions</span>
+                    </div>
+                    <div class="price">$122 000 000</div>
+                    <div class="timer">
+                        <img src="assets/images/alarm-blue.svg" alt="clock">
+                        <span class="time">1:22:01</span>
+                    </div>
+
+                        <a href="#" class="button">Play Now</a>
+
+                </div>
+
+                <div class="play_item">
+                    <img src="assets/images/favorites.svg" alt="favorites" class="favorites">
+                    <div class="play_img">
+                        <img src="assets/images/lotto-mega.svg" alt="mega">
+                    </div>
+                    <div class="play_content">
+                        <img src="assets/images/country.svg" alt="country" class="flag">
+                        <span class="play_description">Mega Millions</span>
+                    </div>
+                    <div class="price">$122 000 000</div>
+                    <div class="timer">
+                        <img src="assets/images/alarm-blue.svg" alt="clock">
+                        <span class="time">1:22:01</span>
+                    </div>
+
+                        <a href="#" class="button">Play Now</a>
+
+                </div>
+
+                <div class="play_item">
+                    <img src="assets/images/favorites.svg" alt="favorites" class="favorites">
+                    <div class="play_img">
+                        <img src="assets/images/lotto-mega.svg" alt="mega">
+                    </div>
+                    <div class="play_content">
+                        <img src="assets/images/country.svg" alt="country" class="flag">
+                        <span class="play_description">Mega Millions</span>
+                    </div>
+                    <div class="price">$122 000 000</div>
+                    <div class="timer">
+                        <img src="assets/images/alarm-blue.svg" alt="clock">
+                        <span class="time">1:22:01</span>
+                    </div>
+
+                        <a href="#" class="button">Play Now</a>
+
+                </div>
+
+                <div class="play_item">
+                    <img src="assets/images/favorites.svg" alt="favorites" class="favorites">
+                    <div class="play_img">
+                        <img src="assets/images/lotto-mega.svg" alt="mega">
+                    </div>
+                    <div class="play_content">
+                        <img src="assets/images/country.svg" alt="country" class="flag">
+                        <span class="play_description">Mega Millions</span>
+                    </div>
+                    <div class="price">$122 000 000</div>
+                    <div class="timer">
+                        <img src="assets/images/alarm-blue.svg" alt="clock">
+                        <span class="time">1:22:01</span>
+                    </div>
+
+                        <a href="#" class="button">Play Now</a>
+
+                </div>
+
+                <div class="play_item">
+                    <img src="assets/images/favorites.svg" alt="favorites" class="favorites">
+                    <div class="play_img">
+                        <img src="assets/images/lotto-mega.svg" alt="mega">
+                    </div>
+                    <div class="play_content">
+                        <img src="assets/images/country.svg" alt="country" class="flag">
+                        <span class="play_description">Mega Millions</span>
+                    </div>
+                    <div class="price">$122 000 000</div>
+                    <div class="timer">
+                        <img src="assets/images/alarm-blue.svg" alt="clock">
+                        <span class="time">1:22:01</span>
+                    </div>
+
+                        <a href="#" class="button">Play Now</a>
+
+                </div>
+
+                <div class="play_item">
+                    <img src="assets/images/favorites.svg" alt="favorites" class="favorites">
+                    <div class="play_img">
+                        <img src="assets/images/lotto-mega.svg" alt="mega">
+                    </div>
+                    <div class="play_content">
+                        <img src="assets/images/country.svg" alt="country" class="flag">
+                        <span class="play_description">Mega Millions</span>
+                    </div>
+                    <div class="price">$122 000 000</div>
+                    <div class="timer">
+                        <img src="assets/images/alarm-blue.svg" alt="clock">
+                        <span class="time">1:22:01</span>
+                    </div>
+
+                        <a href="#" class="button">Play Now</a>
+
+                </div>
+
+                <div class="play_item">
+                    <img src="assets/images/favorites.svg" alt="favorites" class="favorites">
+                    <div class="play_img">
+                        <img src="assets/images/lotto-mega.svg" alt="mega">
+                    </div>
+                    <div class="play_content">
+                        <img src="assets/images/country.svg" alt="country" class="flag">
+                        <span class="play_description">Mega Millions</span>
+                    </div>
+                    <div class="price">$122 000 000</div>
+                    <div class="timer">
+                        <img src="assets/images/alarm-blue.svg" alt="clock">
+                        <span class="time">1:22:01</span>
+                    </div>
+
+                        <a href="#" class="button ">Play Now</a>
+
+                </div>
+            </div>
+            <div class="details">
+                <a href="" class="details_link">More Details »</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="winners">
+        <div class="container">
+            <div class="winners_inner">
+
+                <div class="biggest_winners">
+                <div class="red_title">
+                    <h3 class="color-title">BIGGEST LOTTERY WINNER</h3>
+                </div>
+                <div class="biggest_winners_inner">
+                    <div class="inner_title">
+                        <div class="title_logo">
+                            <img src="assets/images/lotto-logo.svg" alt="lotto">
+                        </div>
+                        <div class="title_text">won
+                            <span>€100 000 000</span>
+                        </div>
+                    </div>
+
+                   <div class="biggest_winners_info">
+                        <div class="inner_results">
+                        <div class="results_img">
+                            <img src="assets/images/winners.svg" alt="winners">
+                        </div>
+                        <div class="results_group">
+                           <div class="results_text">UK Lotto results:</div>
+
+                           <div class="results_info">
+                               <div class="results_number">
+                                   <img src="assets/images/number-07.svg" alt="number">
+                                   <img src="assets/images/number-07.svg" alt="number">
+                                   <img src="assets/images/number-07.svg" alt="number">
+                                   <img src="assets/images/number-07.svg" alt="number">
+                                   <img src="assets/images/number-07.svg" alt="number">
+                               </div>
+                               <div class="results_date">Date: <span>20.11.2021</span>    </div>
+                               </div>
+                       </div>
+
+                    </div>
+
+                        <div class="inner_content">
+                        <div class="content_info">
+                            <div class="info_title">Shaun Vincent a Lottery Winner</div>
+                            <div class="info_description">Shaun Vincent, from Barnsley, celebrates his £1,158,038 National Lottery win after his cheque presentation at the Cedar Court Hotel, Wakefield.</div>
+                            <div class="details info_more">
+                                <a href="" class="details_link info_link">Read the full story</a>
+                            </div>
+                        </div>
+                        <a href="#" class="button">Play Now</a>
+                    </div>
+                   </div>
+
+                </div>
+            </div>
+
+
+            <div class="latest_winners">
+
+                <div class="red_title">
+                    <h3 class="color-title">OUR LATEST WINNERS</h3>
+                </div>
+                <div class="latest_winners_prizes">
+                    <div class="prizes_title">Total prizes paid out</div>
+                    <div class="price">US$ 107 233 768</div>
+                    <div class="prizes_tickets">
+                        <div class="tickets_sum">6 975 146</div>
+                        <div class="tickets_text">winning tickets</div>
+                    </div>
+                </div>
+                <div class="latest_winners_item">
+                    <div class="latest_winners_logo">
+                        <img src="assets/images/winner_logo.svg" alt="winners-logo">
+                    </div>
+                    <div class="latest_winners_content">
+                        <div class="winners_date">20.11.2021</div>
+                        <div class="winners_text">
+                            <img src="assets/images/Germany.svg" alt="country" class="flag">
+                            <span class="winners_name">J.J won  Р175</span>
+                        </div>
+                        <div class="winners_description">in   7 ИЗ 49   draw  #13476</div>
+                    </div>
+                </div>
+                <div class="latest_winners_item">
+                    <div class="latest_winners_logo">
+                        <img src="assets/images/winner_logo.svg" alt="winners-logo">
+                    </div>
+                    <div class="latest_winners_content">
+                        <div class="winners_date">20.11.2021</div>
+                        <div class="winners_text">
+                            <img src="assets/images/Germany.svg" alt="country" class="flag">
+                            <span class="winners_name">J.J won  Р175</span>
+                        </div>
+                        <div class="winners_description">in   7 ИЗ 49   draw  #13476</div>
+                    </div>
+                </div>
+                <div class="latest_winners_item">
+                    <div class="latest_winners_logo">
+                        <img src="assets/images/winner_logo.svg" alt="winners-logo">
+                    </div>
+                    <div class="latest_winners_content">
+                        <div class="winners_date">20.11.2021</div>
+                        <div class="winners_text">
+                            <img src="assets/images/Germany.svg" alt="country" class="flag">
+                            <span class="winners_name">J.J won  Р175</span>
+                        </div>
+                        <div class="winners_description">in   7 ИЗ 49   draw  #13476</div>
+                    </div>
+                </div>
+                <div class="latest_winners_item">
+                    <div class="latest_winners_logo">
+                        <img src="assets/images/winner_logo.svg" alt="winners-logo">
+                    </div>
+                    <div class="latest_winners_content">
+                        <div class="winners_date">20.11.2021</div>
+                        <div class="winners_text">
+                            <img src="assets/images/Germany.svg" alt="country" class="flag">
+                            <span class="winners_name">J.J won  Р175</span>
+                        </div>
+                        <div class="winners_description">in   7 ИЗ 49   draw  #13476</div>
+                    </div>
+                </div>
+                <div class="latest_winners_item">
+                    <div class="latest_winners_logo">
+                        <img src="assets/images/winner_logo.svg" alt="winners-logo">
+                    </div>
+                    <div class="latest_winners_content">
+                        <div class="winners_date">20.11.2021</div>
+                        <div class="winners_text">
+                            <img src="assets/images/Germany.svg" alt="country" class="flag">
+                            <span class="winners_name">J.J won  Р175</span>
+                        </div>
+                        <div class="winners_description">in   7 ИЗ 49   draw  #13476</div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="question">
+        <div class="container">
+            <div class="question_inner">
+
+                <h4 class="question_title">FREQUENTLY ASKED QUESTION (F.A.Q.)</h4>
+
+                <div class="accordion">
+                <div class="accordion_item" data-collapse="#wedo_1">
+                    <div class="accordion_header">
+                        <div class="accordion_title">Can I play the lottery online?</div>
+                    </div>
+                    <div class="accordion_content" id="wedo_1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+
+                <div class="accordion_item" data-collapse="#wedo_2">
+                    <div class="accordion_header">
+                        <div class="accordion_title">How will I get my wins?</div>
+                    </div>
+                    <div class="accordion_content" id="wedo_2">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+
+                <div class="accordion_item" data-collapse="#wedo_3">
+                    <div class="accordion_header">
+                        <div class="accordion_title">Is it safe to play lottery online?</div>
+                    </div>
+                    <div class="accordion_content" id="wedo_3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+               <div class="footer_social">
+                   <div class="social_left">
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/whatsapp.svg" alt="whatsapp" class="social_img">
+                        </a>
+                       <div class="social_text">
+                           <h5 class="social_title">Live chat by WhatsApp</h5>
+                           <p class="sosial_subtitle">Customer Service</p>
+                       </div>
+                   </div>
+                   <div class="social_right">
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/facebook.svg" alt="facebook" class="social_img">
+                        </a>
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/twitter.svg" alt="twitter" class="social_img">
+                        </a>
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/facebook-messenger.svg" alt="messenger" class="social_img">
+                        </a>
+                   </div>
+               </div>
+               <div class="footer_info">
+                    <div class="footer_col first_col">
+                        <h5 class="footer_title">USEFUL LINKS</h5>
+                        <div class="footer_links">
+                           <div class="col_links">
+                               <a href="" class="footer_link home_link">Home</a>
+                                <a href="lottery-winners.html" class="footer_link">Lottery Results & Winners</a>
+                                <a href="promotions.html" class="footer_link">Lottery Promotions</a>
+                                <a href="about-us.html" class="footer_link">About Us</a>
+                                <a href="" class="footer_link">Contact Us</a>
+                           </div>
+
+                            <div class="col_links second_col_links">
+                                <a href="" class="footer_link">Terms & Conditions</a>
+                                <a href="" class="footer_link">Security</a>
+                                <a href="" class="footer_link">Privacy Policy</a>
+                                <a href="" class="footer_link">Acceptable Use Policy</a>
+                                <a href="" class="footer_link">Website Use Policy</a>
+                                <a href="" class="footer_link">Affiliate program</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer_col second_col">
+                        <h5 class="footer_title second_col_title">SMARTWINNERS</h5>
+                        <p class="footer_text">The trade name SmartWinners and all content on this website is a copyright of SmartWinners Limited. All rights reserved. We are an independent lottery ticket purchasing service. We are not affiliated with nor are we endorsed by any State sanctioned lottery organization. We make no claims on our site to be such. </p>
+                        <p class="footer_address">Our registered business address is <br> Unit 6158, PO Box 6945, London, W1A 6US, United Kingdom.</p>
+                    </div>
+
+                    <div class="footer_col third_col">
+                       <div class="third_col_group">
+                           <h5 class="footer_title payment_title">PAYMENT METHODS</h5>
+                        <div class="pay_methots">
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Visa-dark.svg" alt="Visa" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/MasterCard-dark.svg" alt="MasterCard" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Maestro-dark.svg" alt="Maestro" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/DinersClub-dark.svg" alt="DinersClub" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Skrill-dark.svg" alt="Skrill" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Bitcoin-dark.svg" alt="Bitcoin" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/qiwi%201.svg" alt="qiwi" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/hsbc%201.svg" alt="hsbc" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/litecoin%201.svg" alt="litecoin" class="footer_img">
+                            </a>
+                        </div>
+                       </div>
+
+                        <div class="third_col_group">
+                            <h5 class="footer_title security_title">SECURITY & TRUST</h5>
+                            <div class="footer_security">
+                                <a href="#" class="footer_link">
+                                    <img src="assets/images/contacts/ctv_1.svg" alt="security" class="footer_img">
+                                </a>
+                                <a href="#" class="footer_link">
+                                    <img src="assets/images/contacts/comodo_1.svg" alt="comodo" class="footer_img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

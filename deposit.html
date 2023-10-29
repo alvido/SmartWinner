@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Winners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+
+    <header class="header">
+           <div class="container">
+                <div class="header_inner">
+                     <div class="header_item">
+                          <button class="nav-toggle" id="nav_toggle" type="button">
+                              <span class="nav-toggle__item">Menu</span>
+                          </button>
+                          <a href="index.html" class="header_logo">
+                             <img src="assets/images/logo.svg" alt="logo">
+                          </a>
+                          <div class="mobil_acount">
+                                  <a href="sign-in.html" class="mobil_acount_link">
+                                      <img src="assets/images/avatar.svg" alt="avatar_logo" class="mobil_acount_img">
+                                  </a>
+                              </div>
+                          <div class="header_account">
+                              <div class="account_name">
+                                 Welcome <b>Roma</b> &mdash; <a href="welcome.html" class="acount_logout">Logout</a>
+                              </div>
+                              <div class="account_balance">
+                          Your balanse: <b>P 0,00</b>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="header_item social">
+                          <div class="header_social">
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/facebook.svg" alt="facebook" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/twitter.svg" alt="twitter" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/facebook-messenger.svg" alt="messenger" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                   <a href="#" class="header_social_link">
+                                       <img src="assets/images/contacts/whatsapp.svg" alt="whatsapp" class="header_social_img">
+                                   </a>
+                              </div>
+                          </div>
+                          <dl id="sample" class="dropdown">
+                        <dt>
+                            <a>
+                                <img class="flag" src="assets/images/country/USA.svg" alt="">English
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/USA.svg" alt="">English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Francais.svg" alt="">Français
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Germany.svg" alt="">Deutsch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Italy.svg" alt="">Italiano
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Russia.svg" alt="">Русский
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Spain.svg" alt="">Español
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Ukraine.svg" alt="">Українська
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                      </div>
+                </div>
+
+                <div class="header_nav">
+                    <nav class="nav">
+                        <a class="nav_link" href="index.html" data-scroll="#">Home</a>
+                        <a class="nav_link" href="all-lotteries.html" data-scroll="#">Play all lottery</a>
+                        <a class="nav_link" href="lottery-group.html" data-scroll="#">Lottery groups</a>
+                       <a class="nav_link" href="promotions.html" data-scroll="#">Promotions</a>
+                    </nav>
+                    <div class="account">
+                        <a class="nav_link" href="sign-in.html" data-scroll="#">My account</a>
+                    </div>
+                </div>
+          </div>
+    </header>
+
+
+    <main class="page">
+        <div class="container">
+            <div class="page_inner method">
+                <a href="#" class="payment_back">Back</a>
+                <h1 class="title_page">Deposit</h1>
+                <h2 class="deposit_title">ENTER THE AMOUNT YOU WISH TO DEPOSIT:</h2>
+                <a href="#" class="details_link help_link">Need help?</a>
+                <div class="deposit_currency">
+                    <input type="number" class="form_input" id="currency_price" required="required" placeholder="">
+                    <select name="currency" class="currency_choice"><!--Город-->
+                        <option value="en" selected="selected"> $ USD (USA)</option>
+                        <option value="ua">Гривня</option>
+                        <option value="ru">Рубль</option>
+                        <option value="pl">Zloty</option>
+                    </select>
+                </div>
+
+
+
+
+                <div class="payment_method deposit_method">
+
+                   <h2 class="paymethod_title paymethod_mobil_title">Choose the payment method:</h2>
+                   <div class="payment_method_inner">
+                        <div class="payment_method_item payment_method_choice">
+
+                        <div class="method_choice active" id="first_choice">
+                            <img src="assets/images/contacts/four_card.svg" alt="credit-cards" class="method_img">
+                            <p class="method_text">Use a new Credit\Debit card</p>
+                        </div>
+                        <div class="method_choice" id="second_choise">
+                            <img src="assets/images/contacts/Skrill-dark.svg" alt="scrill" class="method_img">
+                            <p class="method_text">Skrill - Credit Card</p>
+                        </div>
+                    </div>
+
+                        <div class="payment_mathod_item">
+
+                        <form action="#" class="form" id="first_form">
+                           <h3 class="form_title">Use a new Credit \ <br> Debit card:</h3>
+                            <p class="form_text">Card Holder</p>
+                            <input type="text" class="form_input" id="name" required="required" placeholder="Name and surname on card">
+
+                            <div class="select_card">
+                                <div class="select">
+                                    <div class="select_body">
+                                        <div class="select_option" id="first">
+                                            <img src="assets/images/card-logo.svg" alt="master-card" class="select_img">
+                                        </div>
+                                        <div class="select_option" id="second">
+                                            <img src="assets/images/contacts/Visa-dark.svg" alt="visa" class="select_img">
+                                        </div>
+                                        <div class="select_option" id="third">
+                                            <img src="assets/images/contacts/Maestro-dark.svg" alt="maestro" class="select_img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="form_text">Card Number</p>
+                            <input type="number" class="form_input" id="card_number" required="required" placeholder="**** **** **** ****">
+                            </div>
+
+                            <p class="form_text">Valid until</p>
+                            <div class="selected_wrap">
+                                   <select name="month" class="form_input" id="month">
+                                   <option value="month" selected disabled>Month</option>
+                                   <option value="January">January</option>
+                                   <option value="February">February</option>
+                                   <option value="March">March</option>
+                                   <option value="April">April</option>
+                                   <option value="May">May</option>
+                                   <option value="June">June</option>
+                                   <option value="July">July</option>
+                                   <option value="August">August</option>
+                                   <option value="September">September</option>
+                                   <option value="October">October</option>
+                                   <option value="November">November</option>
+                                   <option value="December">December</option>
+                               </select>
+                               </div>
+
+                               <div class="selected_wrap">
+                                   <select name="year" class="form_input" id="year">
+                                       <option value="year" selected  disabled>Year</option>
+                                       <option value="2025">2025</option>
+                                       <option value="2024">2024</option>
+                                       <option value="2023">2023</option>
+                                       <option value="2022">2022</option>
+                                       <option value="2021">2021</option>
+                                       <option value="2020">2020</option>
+                                       <option value="2019">2019</option>
+                                       <option value="2018">2018</option>
+                                       <option value="2017">2017</option>
+                                       <option value="2016">2016</option>
+                                       <option value="2015">2015</option>
+
+                                   </select>
+                               </div>
+                            <p class="form_text">CVV (?)</p>
+                            <input type="number" class="form_input" id="cvv" maxlength="3" required="required" placeholder="***">
+                            <input type="submit" class="button form_button" id="submit" value="Submit payment">
+                            <input type="submit" class="button form_button" id="cancel" value="cancel">
+                        </form>
+
+                        <form action="#" class="form" id="second_form">
+                           <h4 class="paymethod_title paymethod_form_title">Log in to complete the payment</h4>
+                           <p class="form_subtitle">Pay safely with just an email and password</p>
+                            <p class="form_text">E-mail:</p>
+                            <input type="email" class="form_input" id="email" required="required" placeholder="">
+                            <p class="form_text">Password:</p>
+                            <input type="password" class="form_input" id="password" required="required" placeholder="">
+                            <p class="pasword_text">Passwords must be at least 6 characters</p>
+                            <input type="submit" class="button form_button" id="login" value="Log In">
+                            <a href="/privasy.html" class="privacy_link">Privacy Policy </a>
+                            <a href="create-account.html" class="have_link">Don't have an account?</a>
+                            <a href="sign-in.html" class="signup_link">Sign up</a>
+                        </form>
+
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+               <div class="footer_social">
+                   <div class="social_left">
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/whatsapp.svg" alt="whatsapp" class="social_img">
+                        </a>
+                       <div class="social_text">
+                           <h5 class="social_title">Live chat by WhatsApp</h5>
+                           <p class="sosial_subtitle">Customer Service</p>
+                       </div>
+                   </div>
+                   <div class="social_right">
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/facebook.svg" alt="facebook" class="social_img">
+                        </a>
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/twitter.svg" alt="twitter" class="social_img">
+                        </a>
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/facebook-messenger.svg" alt="messenger" class="social_img">
+                        </a>
+                   </div>
+               </div>
+               <div class="footer_info">
+                    <div class="footer_col first_col">
+                        <h5 class="footer_title">USEFUL LINKS</h5>
+                        <div class="footer_links">
+                           <div class="col_links">
+                               <a href="" class="footer_link home_link">Home</a>
+                                <a href="" class="footer_link">Lottery Results & Winners</a>
+                                <a href="" class="footer_link">Lottery Promotions</a>
+                                <a href="" class="footer_link">About Us</a>
+                                <a href="" class="footer_link">Contact Us</a>
+                           </div>
+
+                            <div class="col_links second_col_links">
+                                <a href="" class="footer_link">Terms & Conditions</a>
+                                <a href="" class="footer_link">Security</a>
+                                <a href="" class="footer_link">Privacy Policy</a>
+                                <a href="" class="footer_link">Acceptable Use Policy</a>
+                                <a href="" class="footer_link">Website Use Policy</a>
+                                <a href="" class="footer_link">Affiliate program</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer_col second_col">
+                        <h5 class="footer_title second_col_title">SMARTWINNERS</h5>
+                        <p class="footer_text">The trade name SmartWinners and all content on this website is a copyright of SmartWinners Limited. All rights reserved. We are an independent lottery ticket purchasing service. We are not affiliated with nor are we endorsed by any State sanctioned lottery organization. We make no claims on our site to be such. </p>
+                        <p class="footer_address">Our registered business address is <br> Unit 6158, PO Box 6945, London, W1A 6US, United Kingdom.</p>
+                    </div>
+
+                    <div class="footer_col third_col">
+                       <div class="third_col_group">
+                           <h5 class="footer_title payment_title">PAYMENT METHODS</h5>
+                        <div class="pay_methots">
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Visa-dark.svg" alt="Visa" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/MasterCard-dark.svg" alt="MasterCard" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Maestro-dark.svg" alt="Maestro" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/DinersClub-dark.svg" alt="DinersClub" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Skrill-dark.svg" alt="Skrill" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Bitcoin-dark.svg" alt="Bitcoin" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/qiwi%201.svg" alt="qiwi" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/hsbc%201.svg" alt="hsbc" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/litecoin%201.svg" alt="litecoin" class="footer_img">
+                            </a>
+                        </div>
+                       </div>
+
+                        <div class="third_col_group">
+                            <h5 class="footer_title security_title">SECURITY & TRUST</h5>
+                            <div class="footer_security">
+                                <a href="#" class="footer_link">
+                                    <img src="assets/images/contacts/ctv_1.svg" alt="security" class="footer_img">
+                                </a>
+                                <a href="#" class="footer_link">
+                                    <img src="assets/images/contacts/comodo_1.svg" alt="comodo" class="footer_img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+

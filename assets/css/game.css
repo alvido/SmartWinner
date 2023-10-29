@@ -1,0 +1,584 @@
+html,
+html a {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000;
+}
+
+body.lock {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*scroll bar*/
+/* Работает в Firefox */
+* {
+    scrollbar-width: thin;
+    /* "auto" или "thin" */
+    scrollbar-color: #08598e #e0e0e0;
+    /* цвет бегунка и зоны отслеживания */
+}
+
+/* Работает в Chrome, Edge и Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+    /* ширина всей полосы прокрутки */
+}
+
+*::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    /* цвет зоны отслеживания */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #08598e;
+    /* цвет бегунка */
+    border-radius: 20px;
+    /* округлось бегунка */
+    border: 2px solid #e0e0e0;
+    /* отступ вокруг бегунка */
+}
+
+input[type=text]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=text]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}
+
+a {
+    color: #0061A3;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img.flag {
+    width: 20px;
+    margin-right: 5px;
+}
+
+input,
+button,
+textarea,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: none;
+    border-radius: none;
+}
+
+input:disabled,
+input[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+    background: #fff;
+    -webkit-border-radius: 0px;
+    border-radius: 0;
+}
+
+input[type="radio"] {
+    -webkit-appearance: radio;
+    -moz-appearance: radio;
+    appearance: radio-button;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 40px 0;
+
+    border: 0;
+    background-color: #e5e5e5;
+}
+
+
+.scissors {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.scissors::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    transform: translate(-35%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.handle-left {
+    width: 100%;
+    height: 20px;
+    background-color: #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50% 0 100% 10px;
+    transform-origin: calc(50% - 30px) center;
+    transform: translate(-50%, -50%) rotate(30deg);
+
+
+    animation: scissorsAnimation 1.5s ease-in-out infinite;
+}
+
+.handle-left::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -40px;
+    bottom: 0;
+    width: 60px;
+    height: 40px;
+    border: 10px solid #333;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.handle-right {
+    width: 100%;
+    height: 20px;
+    background-color: #777;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px 100% 0 50%;
+    transform-origin: calc(50% - 30px) center;
+    transform: translate(-50%, -50%) rotate(-30deg);
+
+    animation: rightscissorsAnimation 1.5s ease-in-out infinite;
+}
+
+.handle-right::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -40px;
+    top: 0;
+    width: 60px;
+    height: 40px;
+    border: 10px solid #333;
+    border-radius: 50%;
+    background: #fff;
+}
+
+@keyframes scissorsAnimation {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) rotate(30deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(7deg);
+    }
+}
+
+@keyframes rightscissorsAnimation {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) rotate(-30deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(-7deg);
+    }
+}
+
+
+
+
+
+
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Game */
+
+.color--blue {
+    color: #08598e;
+}
+
+.color--red {
+    color: #d92840;
+}
+
+.game__section {
+    padding: 30px 0;
+}
+
+.game__wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game__img {
+    max-width: 120px;
+}
+
+.game__title {
+    font-size: 40px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.game__subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.game__text {
+    font-size: 12px;
+    color: #777;
+    font-weight: 500;
+    margin: 10px 0 5px;
+}
+
+.game__text span {
+    font-size: 14px;
+    color: #444;
+}
+
+.game__timer {
+    display: flex;
+    align-items: center;
+}
+
+.timer_logo {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.game__ads {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.game__ads span {
+    margin-left: 10px;
+}
+
+.game__lines--list {
+    width: 100%;
+    margin: 20px auto 0;
+}
+
+.game__lines--wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.game__lines--wrap:hover,
+.game__lines--wrap.active {
+    border: 2px solid #ce0000;
+}
+
+.game__lines--cards {
+    display: flex;
+    align-items: center;
+}
+
+.game__lines--text {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.cards {
+    width: 75px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    margin: 0 5px;
+    line-height: 38px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cards em {
+    width: 26px;
+    height: 26px;
+    background: url(../images/symbole_carte_card_symbol.svg) center center no-repeat;
+    background-size: cover;
+}
+
+.cards em.spades {
+    background-position: -73px 0;
+}
+
+.cards em.hearts {
+    background-position: -23px 0;
+}
+
+.cards em.clubs {
+    background-position: -49px 0;
+    width: 24px;
+}
+
+.cards em.diamonds {
+    background-position: 4px 0;
+}
+
+.cards i {
+    font-style: normal;
+}
+
+.lines__clear {
+    background: transparent;
+    font-size: 16px;
+    line-height: 110%;
+    color: #0065a7;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.lines__clear:hover {
+    text-decoration: underline;
+}
+
+.chance {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 30px;
+
+}
+
+.chance__list {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5px 0;
+}
+
+.chance__item {
+    width: 40px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0 5px;
+    line-height: 38px;
+    font-size: 30px;
+    font-weight: bold;
+
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.chance__item:hover {
+    background: #08598e;
+    color: #fff;
+}
+
+.chance__item.active {
+    background: green;
+    color: #fff;
+}
+
+.suit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suit em {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background: url(../images/symbole_carte_card_symbol.svg) center center no-repeat;
+    background-size: cover;
+
+}
+
+.suit em.spades {
+    background-position: -210px 0;
+}
+
+.suit em.hearts {
+    background-position: -65px 0;
+}
+
+.suit em.clubs {
+    background-position: -140px 0;
+}
+
+.suit em.diamonds {
+    background-position: 10px 0;
+}
+
+
+@media screen and (max-width: 560px) {
+
+    .game__lines--item {
+        margin-bottom: 10px;
+    }
+
+    .game__lines--wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        border: 2px solid #c2c2c2;
+    }
+
+    .game__lines--cards {
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .lines__clear {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .chance__item {
+        width: 30px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .suit em {
+        width: 50px;
+        height: 50px;
+    }
+
+    .suit em.spades {
+        background-position: -139px 0;
+    }
+
+    .suit em.hearts {
+        background-position: -43px 2px;
+    }
+
+    .suit em.clubs {
+        width: 48px;
+        background-position: -94px 0;
+    }
+
+    .suit em.diamonds {
+        background-position: 5px 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .game__ads {
+        font-size: 28px;
+    }
+
+    .cards {
+        width: 64px;
+        font-size: 26px;
+    }
+
+    .chance {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .chance__list {
+        flex-direction: column;
+        padding: 0 5px;
+    }
+
+    .chance__item {
+        width: 50px;
+        height: 50px;
+        margin: 5px 0;
+    }
+}

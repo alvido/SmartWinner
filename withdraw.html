@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Winners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+
+    <header class="header">
+           <div class="container">
+                <div class="header_inner">
+                     <div class="header_item">
+                          <button class="nav-toggle" id="nav_toggle" type="button">
+                              <span class="nav-toggle__item">Menu</span>
+                          </button>
+                          <a href="index.html" class="header_logo">
+                             <img src="assets/images/logo.svg" alt="logo">
+                          </a>
+                          <div class="mobil_acount">
+                                  <a href="sign-in.html" class="mobil_acount_link">
+                                      <img src="assets/images/avatar.svg" alt="avatar_logo" class="mobil_acount_img">
+                                  </a>
+                              </div>
+                          <div class="header_account">
+                              <div class="account_name">
+                                 Welcome <b>Roma</b> &mdash; <a href="welcome.html" class="acount_logout">Logout</a>
+                              </div>
+                              <div class="account_balance">
+                          Your balanse: <b>P 0,00</b>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="header_item social">
+                          <div class="header_social">
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/facebook.svg" alt="facebook" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/twitter.svg" alt="twitter" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/facebook-messenger.svg" alt="messenger" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                   <a href="#" class="header_social_link">
+                                       <img src="assets/images/contacts/whatsapp.svg" alt="whatsapp" class="header_social_img">
+                                   </a>
+                              </div>
+                          </div>
+                          <dl id="sample" class="dropdown">
+                        <dt>
+                            <a>
+                                <img class="flag" src="assets/images/country/USA.svg" alt="">English
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/USA.svg" alt="">English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Francais.svg" alt="">Français
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Germany.svg" alt="">Deutsch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Italy.svg" alt="">Italiano
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Russia.svg" alt="">Русский
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Spain.svg" alt="">Español
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Ukraine.svg" alt="">Українська
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                      </div>
+                </div>
+
+                <div class="header_nav">
+                    <nav class="nav">
+                        <a class="nav_link" href="index.html" data-scroll="#">Home</a>
+                        <a class="nav_link" href="all-lotteries.html" data-scroll="#">Play all lottery</a>
+                        <a class="nav_link" href="lottery-group.html" data-scroll="#">Lottery groups</a>
+                       <a class="nav_link" href="promotions.html" data-scroll="#">Promotions</a>
+                    </nav>
+                    <div class="account">
+                        <a class="nav_link" href="sign-in.html" data-scroll="#">My account</a>
+                    </div>
+                </div>
+          </div>
+    </header>
+
+
+    <main class="page">
+        <div class="container">
+            <div class="personal_information">
+                <h1 class="personal_information_title">withdraw</h1>
+                <button class="button_back"> back</button>
+                <div class="personal_information_inner">
+                   <a href="#" class="personal_help_link">Need help?</a>
+                    <div class="personal_information_left">
+                        <div class="withdraw_item active" id="withdraw">
+                           <div class="withdraw_logo">
+                               <img src="assets/images/account/withdraw.svg" alt="withdraw" class="withdraw_img">
+                           </div>
+                            <p class="information_text">Withdraw</p>
+                        </div>
+                        <div class="withdraw_item" id="transactions">
+                           <div class="withdraw_logo">
+                               <img src="assets/images/account/transaction.svg" alt="transaction" class="withdraw_img">
+                           </div>
+                            <p class="information_text">transactions</p>
+                        </div>
+                    </div>
+
+                    <div class="withdraw_right">
+                        <div class="information_form" id="withdraw_form">
+                           <div class="withdraw_request">
+                               <p class="withdraw_text">Available balance</p>
+                               <p class="withdraw_price">$375.00</p>
+                               <p class="withdraw_title">choose where to you want to withdraw your winning</p>
+
+                               <div class="withdraw_method">
+                                   <button class="withdraw_method-button">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/>
+                                      </svg>
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                           <path d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8.1-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
+                                        </svg>
+                                        by cheque
+                                   </button>
+                                   <button class="withdraw_method-button">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/>
+                                      </svg>
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                           <path d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8.1-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
+                                        </svg>
+                                        Add Wire transfer
+                                   </button>
+                               </div>
+                          </div>
+
+                           <div class="modal_box" id="add_bank">
+                             <div class="modal_content">
+                                 <div class="modal_header">
+                                     <h5 class="modal_title">Add new bank account</h5>
+                                     <button class="close_btn">×</button>
+                                 </div>
+                                 <div class="modal_body">
+                                     <label class="form_text" for="modal_country">Your bank country:</label>
+                                      <dl id="modal_country" class="dropdown">
+                                        <dt>
+                                            <a>
+                                                <img class="flag" src="assets/images/country/USA.svg" alt="">United States (USD)
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                               <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/USA.svg" alt="">United States (USD)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Francais.svg" alt="">France (EUR)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Germany.svg" alt="">Germany
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/UK.svg" alt="">United Kingdom (GBP)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Russia.svg" alt="">RUSSIA (RUB)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Canada.svg" alt="">Canada (CAD)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Ukraine.svg" alt="">Ukraine (UAH)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/USA.svg" alt="">United States (USD)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Francais.svg" alt="">France (EUR)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Germany.svg" alt="">Germany
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/UK.svg" alt="">United Kingdom (GBP)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Russia.svg" alt="">RUSSIA (RUB)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Canada.svg" alt="">Canada (CAD)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Ukraine.svg" alt="">Ukraine (UAH)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/USA.svg" alt="">United States (USD)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Francais.svg" alt="">France (EUR)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Germany.svg" alt="">Germany
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/UK.svg" alt="">United Kingdom (GBP)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Russia.svg" alt="">RUSSIA (RUB)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Canada.svg" alt="">Canada (CAD)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <img class="flag" src="assets/images/country/Ukraine.svg" alt="">Ukraine (UAH)
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                      </dl>
+                                      <div class="modal_group">
+                                         <input type="radio" onchange="AccountInfo()" class="modal_radio" id="choice_bank" name="modal_group" checked>
+                                          <label class="form_text" for="bank_code">Bank Code:</label>
+                                          <input type="text" id="bank_code">
+                                          <label class="form_text" for="branch_number">Branch Number:</label>
+                                          <input type="text" id="branch_number" >
+                                          <label class="form_text" for="account_number">Account Number:</label>
+                                          <input type="text" id="account_number">
+                                      </div>
+                                      <div class="modal_group">
+                                         <input type="radio" onchange="IBANFun()" class="modal_radio" id="choice_iban" name="modal_group">
+                                          <label class="form_text" for="iban">IBAN:</label>
+                                          <input type="text" id="iban" disabled>
+                                      </div>
+                                      <label class="form_text" for="modal_receiver">Receiver type:</label>
+                                      <dl id="modal_receiver" class="dropdown">
+                                        <dt>
+                                            <a>
+                                                PRIVATE
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a>
+                                                        PRIVATE
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        BUSINESS
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                      </dl>
+                                  </div>
+                                 <div class="modal_footer">
+                                      <button type="button" class="modal_submit" id="bank_submit">Save</button>
+                                      <button type="button" class="modal_cancel">Cancel</button>
+                                  </div>
+                             </div>
+                          </div>
+
+                           <div class="modal_box" id="verify_bank">
+                             <div class="modal_content">
+                                 <div class="modal_header">
+                                     <h5 class="modal_title">Verify your bank account</h5>
+                                     <button class="close_btn">×</button>
+                                 </div>
+                                 <div class="modal_body">
+                                    <div class="upload-documents">
+                                        <p class="small" role="alert">
+                                            To fully verify your bank account, please upload copies of the following documents: Account holder ID document and bank document.
+                                        </p>
+                                        <div class="upload-photo pt-2">
+                                            <div class="post-a-job-box bd-n">
+                                                <div class="custom-file choose-file d-block mx-auto mt-4">
+                                                    <input required="required" accept="image/jpeg, image/gif, image/png ,application/pdf" type="file" class="custom-file-input" name="identityCard" id="identityCard" onchange="UploadDocument('identityCard')">
+                                                    <label style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" id="identityCardDiv" class="custom-file-label" for="identityCard">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                            <path d="M0 96l576 0c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96zm0 32V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128H0zM64 405.3c0-29.5 23.9-53.3 53.3-53.3H234.7c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7H74.7c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16z"/>
+                                                        </svg>
+                                                        <span id="identityCardSpan">
+                                                            Upload identity card
+                                                        </span>
+                                                    </label>
+                                                    <div id="divIdentityCard" class="invalid-tooltip">
+                                                        Please provide a valid file.
+                                                    </div>
+                                                </div>
+                                                <p class="small w-sm-75 mx-auto text-sm-center pt-1 text-muted">
+                                                    You can upload a passport or drivers license.
+                                                </p>
+                                                <div id="ContentPlaceHolder1_divOther" class="custom-file choose-file d-block mx-auto mt-4">
+                                                    <input required="required" accept="image/*,application/pdf" type="file" class="custom-file-input" name="bankDetails" id="bankDetails" onchange="UploadDocument('bankDetails')">
+                                                    <label style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" id="bankDetailsDiv" class="custom-file-label" for="bankDetails">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                            <path d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"/>
+                                                        </svg>
+                                                        <span id="bankDetailsSpan" class="h5">
+                                                            Upload bank details
+                                                        </span>
+                                                    </label>
+                                                    <div class="text-center invalid-tooltip">
+                                                        Please provide a valid file.
+                                                    </div>
+                                                </div>
+                                                <p id="ContentPlaceHolder1_pOther" class="small w-sm-75 mx-auto text-sm-center pt-1 text-muted">
+                                                    You can upload bank check, bank account or photo credit/debit-card.
+                                                </p>
+                                                <p class="small w-sm-75 mx-auto text-sm-center pt-3 text-muted">
+                                                    Please upload clear, full-color image files (JPEG, GIF, PNG, or PDF) at high resolution (150 DPI minimum) and high quality (32 bit). Documents should be English-language originals or translations, preferably notarized.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                                 <div class="modal_footer">
+                                      <button type="button" class="modal_submit" id="verify_submit">Verify</button>
+                                      <button type="button" class="modal_cancel">Cancel</button>
+                                  </div>
+                             </div>
+                          </div>
+
+                            <div class="bank_details">
+                                <div class="bank_item not_verified">
+                                    <div class="bank_info">
+                                        <span class="bank_country">
+                                            <img class="flag" src="assets/images/country/USA.svg" alt="">United States (USD)
+                                        </span>
+                                        <ul class="bank_list">
+                                            <li class="bank_text">
+                                                Bank Code:<b>1411</b>
+                                            </li>
+                                            <li class="bank_text">
+                                                Branch Number:<b> 41412</b>
+                                            </li>
+                                            <li class="bank_text">
+                                                Account Number:<b>41242</b>
+                                            </li>
+                                            <li class="bank_text">IBAN:<b> </b>
+                                            </li>
+                                            <li class="bank_text">
+                                                Receiver type:<b>PRIVATE</b>
+                                            </li>
+                                        </ul>
+                                        <span class="status status_notverified">Status:
+                                           <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                               <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path>
+                                           </svg>
+                                           <b>Not verified</b>
+                                        </span>
+                                    </div>
+                                    <div class="bank_nav">
+                                       <button class="bank_verify">Verify</button>
+                                       <button class="bank_icon bank_edit">
+                                           <img class="bank_img" src="assets/images/edit.svg" alt="edit">
+                                       </button>
+                                       <button class="bank_icon bank_delete">
+                                           <img class="bank_img" src="assets/images/delete.svg" alt="delete">
+                                       </button>
+                                    </div>
+                                </div>
+                                <div class="bank_item checking">
+                                    <div class="bank_info">
+                                        <span class="bank_country">
+                                            <img class="flag" src="assets/images/country/USA.svg" alt="">United States (USD)
+                                        </span>
+                                        <ul class="bank_list">
+                                            <li class="bank_text">
+                                                Bank Code:<b>1411</b>
+                                            </li>
+                                            <li class="bank_text">
+                                                Branch Number:<b> 41412</b>
+                                            </li>
+                                            <li class="bank_text">
+                                                Account Number:<b>41242</b>
+                                            </li>
+                                            <li class="bank_text">IBAN:<b> </b>
+                                            </li>
+                                            <li class="bank_text">
+                                                Receiver type:<b>PRIVATE</b>
+                                            </li>
+                                        </ul>
+                                        <span class="status status_checking">Status:
+                                           <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                               <path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path>
+                                           </svg>
+                                           <b>Waiting for verification</b>
+                                        </span>
+                                    </div>
+                                    <div class="bank_nav">
+                                       <button class="bank_checking">Again verify?</button>
+                                       <button class="bank_icon bank_edit">
+                                           <img class="bank_img" src="assets/images/edit.svg" alt="edit">
+                                       </button>
+                                       <button class="bank_icon bank_delete">
+                                           <img class="bank_img" src="assets/images/delete.svg" alt="delete">
+                                       </button>
+                                    </div>
+                                </div>
+                                <div class="bank_item verified">
+                                <div class="bank_info">
+                                    <span class="bank_country">
+                                        <img class="flag" src="assets/images/country/USA.svg" alt="">United States (USD)
+                                    </span>
+                                    <ul class="bank_list">
+                                        <li class="bank_text">
+                                            Bank Code:<b>1411</b>
+                                        </li>
+                                        <li class="bank_text">
+                                            Branch Number:<b> 41412 </b>
+                                        </li>
+                                        <li class="bank_text">
+                                            Account Number:<b>41242</b>
+                                        </li>
+                                        <li class="bank_text">
+                                            IBAN:<b> </b>
+                                        </li>
+                                        <li class="bank_text">
+                                            Receiver type:<b>PRIVATE</b>
+                                        </li>
+                                    </ul>
+                                        <span class="status status_verified">Status:
+                                           <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                               <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
+                                           </svg>
+                                           <b>Verified</b>
+                                        </span>
+                                </div>
+                                <div class="bank_nav">
+                                   <button class="bank_withdraw">Withdraw</button>
+                                   <button class="bank_icon bank_edit">
+                                       <img class="bank_img" src="assets/images/edit.svg" alt="edit">
+                                   </button>
+                                   <button class="bank_icon bank_delete">
+                                       <img class="bank_img" src="assets/images/delete.svg" alt="delete">
+                                   </button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+
+                        <div class="information_form" id="transactions_form">
+                           <div class="withdraw_request">
+                               <h2 class="transactions_title">All withdrawal transactions</h2>
+                                <div class="transactions_table">
+                                    <div class="transactions_table_wrap">
+                                       <div class="transactions_table_inner">
+                                          <div class="transactions_table_head">
+                                              <h5 class="transactions_table_title">Date</h5>
+                                          </div>
+                                           <div class="transactions_table_item">
+                                                <p class="transactions_table_text">02.02.2022</p>
+                                                <p class="transactions_table_subtext">09:07:00</p>
+                                            </div>
+                                            <div class="transactions_table_item">
+                                                <p class="transactions_table_text">15.01.2022</p>
+                                                <p class="transactions_table_subtext">09:08:00</p>
+                                            </div>
+                                       </div>
+                                       <div class="transactions_table_inner">
+                                          <div class="transactions_table_head">
+                                              <h5 class="transactions_table_title">amount</h5>
+                                          </div>
+
+                                           <div class="transactions_table_item">
+                                               <p class="transactions_table_text">215.00</p>
+                                          </div>
+                                          <div class="transactions_table_item">
+                                               <p class="transactions_table_text">5000.00</p>
+                                          </div>
+                                       </div>
+                                       <div class="transactions_table_inner">
+                                          <div class="transactions_table_head">
+                                              <h5 class="transactions_table_title">Payment kind</h5>
+                                          </div>
+
+                                           <div class="transactions_table_item">
+                                               <div class="transactions_table_text">Withdrawal of funds •••• 2505</div>
+                                           </div>
+                                           <div class="transactions_table_item">
+                                               <div class="transactions_table_text">Withdrawal of funds •••• 1706</div>
+                                           </div>
+                                       </div>
+                                       <div class="transactions_table_inner">
+                                          <div class="transactions_table_head">
+                                              <h5 class="transactions_table_title">Status</h5>
+                                          </div>
+
+                                           <div class="transactions_table_item">
+                                               <div class="transactions_table_text withdraw">PROCESS</div>
+                                           </div>
+                                           <div class="transactions_table_item">
+                                               <div class="transactions_table_text verified">APPROVED</div>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
+
+
+
+                         <div class="pagination_inner">
+                     <div class="pagination_item">
+                      <a href="#" class="pagination_link">
+                          <img src="assets/images/lottery_syndicate/chevron-double-left.svg" alt="chevron-double-left">
+                          <p class="pagination_text">Previous</p></a>
+                      </div>
+                      <div class="pagination_item">
+                          <a href="#" class="pagination_link">
+                              <p class="pagination_text">Next</p>
+                              <img src="assets/images/lottery_syndicate/chevron-double-right.svg" alt="chevron-double-right"></a>
+
+                      </div>
+                </div>
+
+                          </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <section class="lottery">
+               <h3 class="lottery_title">BIGGEST UPCOMING LOTTERY DRAWS</h3>
+               <div class="lottery_inner">
+                    <div class="lottery_item">
+                        <div class="lottery_top">
+                            <div class="lottery_img">
+                                <img src="assets/images/lotto-oz.svg" alt="lotto-oz">
+                            </div>
+                            <div class="lottery_info">
+                                <div class="lottery_content">
+                                    <img src="assets/images/country.svg" alt="country" class="flag">
+                                    <span class="lottery_description">Mega Millions</span>
+                                </div>
+                                <div class="price">$94 000 000</div>
+                            </div>
+                        </div>
+                        <div class="lottery_bottom">
+                            <a href="promo-picker.html" class="button">Play Now</a>
+                            <div class="timer">
+                                <img src="assets/images/alarm-white.svg" alt="clock">
+                                <span class="time">1:22:01</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lottery_item">
+                        <div class="lottery_top">
+                            <div class="lottery_img">
+                                <img src="assets/images/lotto-mega.svg" alt="lotto-oz">
+                            </div>
+                            <div class="lottery_info">
+                                <div class="lottery_content">
+                                    <img src="assets/images/country.svg" alt="country" class="flag">
+                                    <span class="lottery_description">Mega Millions</span>
+                                </div>
+                                <div class="price">$94 000 000</div>
+                            </div>
+                        </div>
+                        <div class="lottery_bottom">
+                            <a href="promo-picker.html" class="button">Play Now</a>
+                            <div class="timer">
+                                <img src="assets/images/alarm-white.svg" alt="clock">
+                                <span class="time">1:22:01</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lottery_item">
+                        <div class="lottery_top">
+                            <div class="lottery_img">
+                                <img src="assets/images/lotto-power.svg" alt="lotto-oz">
+                            </div>
+                            <div class="lottery_info">
+                                <div class="lottery_content">
+                                    <img src="assets/images/country.svg" alt="country" class="flag">
+                                    <span class="lottery_description">Mega Millions</span>
+                                </div>
+                                <div class="price">$94 000 000</div>
+                            </div>
+                        </div>
+                        <div class="lottery_bottom">
+                            <a href="promo-picker.html" class="button">Play Now</a>
+                            <div class="timer">
+                                <img src="assets/images/alarm-white.svg" alt="clock">
+                                <span class="time">1:22:01</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+               <div class="footer_social">
+                   <div class="social_left">
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/whatsapp.svg" alt="whatsapp" class="social_img">
+                        </a>
+                       <div class="social_text">
+                           <h5 class="social_title">Live chat by WhatsApp</h5>
+                           <p class="sosial_subtitle">Customer Service</p>
+                       </div>
+                   </div>
+                   <div class="social_right">
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/facebook.svg" alt="facebook" class="social_img">
+                        </a>
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/twitter.svg" alt="twitter" class="social_img">
+                        </a>
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/facebook-messenger.svg" alt="messenger" class="social_img">
+                        </a>
+                   </div>
+               </div>
+               <div class="footer_info">
+                    <div class="footer_col first_col">
+                        <h5 class="footer_title">USEFUL LINKS</h5>
+                        <div class="footer_links">
+                           <div class="col_links">
+                               <a href="" class="footer_link home_link">Home</a>
+                                <a href="" class="footer_link">Lottery Results & Winners</a>
+                                <a href="" class="footer_link">Lottery Promotions</a>
+                                <a href="" class="footer_link">About Us</a>
+                                <a href="" class="footer_link">Contact Us</a>
+                           </div>
+
+                            <div class="col_links second_col_links">
+                                <a href="" class="footer_link">Terms & Conditions</a>
+                                <a href="" class="footer_link">Security</a>
+                                <a href="" class="footer_link">Privacy Policy</a>
+                                <a href="" class="footer_link">Acceptable Use Policy</a>
+                                <a href="" class="footer_link">Website Use Policy</a>
+                                <a href="" class="footer_link">Affiliate program</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer_col second_col">
+                        <h5 class="footer_title second_col_title">SMARTWINNERS</h5>
+                        <p class="footer_text">The trade name SmartWinners and all content on this website is a copyright of SmartWinners Limited. All rights reserved. We are an independent lottery ticket purchasing service. We are not affiliated with nor are we endorsed by any State sanctioned lottery organization. We make no claims on our site to be such. </p>
+                        <p class="footer_address">Our registered business address is <br> Unit 6158, PO Box 6945, London, W1A 6US, United Kingdom.</p>
+                    </div>
+
+                    <div class="footer_col third_col">
+                       <div class="third_col_group">
+                           <h5 class="footer_title payment_title">PAYMENT METHODS</h5>
+                        <div class="pay_methots">
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Visa-dark.svg" alt="Visa" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/MasterCard-dark.svg" alt="MasterCard" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Maestro-dark.svg" alt="Maestro" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/DinersClub-dark.svg" alt="DinersClub" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Skrill-dark.svg" alt="Skrill" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Bitcoin-dark.svg" alt="Bitcoin" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/qiwi%201.svg" alt="qiwi" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/hsbc%201.svg" alt="hsbc" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/litecoin%201.svg" alt="litecoin" class="footer_img">
+                            </a>
+                        </div>
+                       </div>
+
+                        <div class="third_col_group">
+                            <h5 class="footer_title security_title">SECURITY & TRUST</h5>
+                            <div class="footer_security">
+                                <a href="#" class="footer_link">
+                                    <img src="assets/images/contacts/ctv_1.svg" alt="security" class="footer_img">
+                                </a>
+                                <a href="#" class="footer_link">
+                                    <img src="assets/images/contacts/comodo_1.svg" alt="comodo" class="footer_img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+

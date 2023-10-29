@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Winners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+
+    <header class="header">
+           <div class="container">
+                <div class="header_inner">
+                     <div class="header_item">
+                          <button class="nav-toggle" id="nav_toggle" type="button">
+                              <span class="nav-toggle__item">Menu</span>
+                          </button>
+                          <a href="index.html" class="header_logo">
+                             <img src="assets/images/logo.svg" alt="logo">
+                          </a>
+                          <div class="mobil_acount">
+                                  <a href="sign-in.html" class="mobil_acount_link">
+                                      <img src="assets/images/avatar.svg" alt="avatar_logo" class="mobil_acount_img">
+                                  </a>
+                              </div>
+                          <div class="header_account">
+                              <div class="account_name">
+                                 Welcome <b>Roma</b> &mdash; <a href="welcome.html" class="acount_logout">Logout</a>
+                              </div>
+                              <div class="account_balance">
+                          Your balanse: <b>P 0,00</b>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="header_item social">
+                          <div class="header_social">
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/facebook.svg" alt="facebook" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/twitter.svg" alt="twitter" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/facebook-messenger.svg" alt="messenger" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                   <a href="#" class="header_social_link">
+                                       <img src="assets/images/contacts/whatsapp.svg" alt="whatsapp" class="header_social_img">
+                                   </a>
+                              </div>
+                          </div>
+                          <dl id="sample" class="dropdown">
+                        <dt>
+                            <a>
+                                <img class="flag" src="assets/images/country/USA.svg" alt="">English
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/USA.svg" alt="">English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Francais.svg" alt="">Français
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Germany.svg" alt="">Deutsch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Italy.svg" alt="">Italiano
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Russia.svg" alt="">Русский
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Spain.svg" alt="">Español
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Ukraine.svg" alt="">Українська
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                      </div>
+                </div>
+
+                <div class="header_nav">
+                    <nav class="nav">
+                        <a class="nav_link" href="index.html" data-scroll="#">Home</a>
+                        <a class="nav_link" href="all-lotteries.html" data-scroll="#">Play all lottery</a>
+                        <a class="nav_link" href="lottery-group.html" data-scroll="#">Lottery groups</a>
+                       <a class="nav_link" href="promotions.html" data-scroll="#">Promotions</a>
+                    </nav>
+                    <div class="account">
+                        <a class="nav_link" href="sign-in.html" data-scroll="#">My account</a>
+                    </div>
+                </div>
+          </div>
+    </header>
+
+    <main class="page">
+        <div class="container">
+            <div class="page_inner lottery_group">
+
+                <h1 class="title_page">Join a lottery syndicate</h1>
+                <p class="subtitle_page">pool your resources with other lottery players to increase your win odds</p>
+                <a href="lottery-step.html" class="details_link page_link">Open your group</a>
+
+                <form action="#" class="search_box">
+                   <p class="search_title">Search</p>
+                    <input type="search" class="search" placeholder="">
+                    <button class="search_button">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.68571 0C8.45888 0 10.1594 0.704386 11.4132 1.9582C12.667 3.21202 13.3714 4.91255 13.3714 6.68571C13.3714 8.34171 12.7646 9.864 11.7669 11.0366L12.0446 11.3143H12.8571L18 16.4571L16.4571 18L11.3143 12.8571V12.0446L11.0366 11.7669C9.864 12.7646 8.34171 13.3714 6.68571 13.3714C4.91255 13.3714 3.21202 12.667 1.9582 11.4132C0.704386 10.1594 0 8.45888 0 6.68571C0 4.91255 0.704386 3.21202 1.9582 1.9582C3.21202 0.704386 4.91255 0 6.68571 0ZM6.68571 2.05714C4.11429 2.05714 2.05714 4.11429 2.05714 6.68571C2.05714 9.25714 4.11429 11.3143 6.68571 11.3143C9.25714 11.3143 11.3143 9.25714 11.3143 6.68571C11.3143 4.11429 9.25714 2.05714 6.68571 2.05714Z" fill="#5F5F5F"/>
+                        </svg>
+                    </button>
+                </form>
+
+
+
+
+                <div class="page_item">
+
+                    <div class="item_account">
+                       <div class="account_logo">
+                           <img class="" src="assets/images/lottery_syndicate/batman.svg" alt="account_logo">
+                       </div>
+                        <h3 class="account_title">BATMAN’s</h3>
+                        <p class="account_text">Group</p>
+                        <a href="syndicate-details-page.html" class="account_link">More Details</a>
+                    </div>
+                    <div class="item_content">
+                        <h2 class="content_title">Increases by <b> &nbsp;68% </b> &nbsp;
+                        <img src="assets/images/lottery_syndicate/green_arrow.svg" alt="arrow" class="arrow">  &nbsp; Your winning chance!!! </h2>
+                        <div class="content_information">
+                          <p class="info_text">Group includes:</p>
+                           <div class="info_item">
+                               <img src="assets/images/lottery_syndicate/mega.svg" alt="lotto-mega" class="content_img">
+                                <p class="content_text"> <span class="content_number">240</span> <b>MegaMillions</b> lines shared with 30 members</p>
+                           </div>
+                           <div class="info_item">
+                               <img src="assets/images/lottery_syndicate/evrojackpot.svg" alt="evrojackpot" class="content_img">
+                                <p class="content_text"> <span class="content_number">240</span> <b> EuroJackpotl</b>  lines shared with 30 members</p>
+                           </div>
+                           <div class="info_item">
+                               <img src="assets/images/lottery_syndicate/oz.svg" alt="oz" class="content_img">
+                                <p class="content_text"> <span class="content_number">240</span> <b>OzLotto</b>  lines shared with 30 members</p>
+                           </div>
+
+
+                        </div>
+                    </div>
+                    <div class="item_statistics">
+                       <p class="info_text">Total jackpot:</p>
+                        <p class="statistics_jackpot">$325 000 000</p>
+                        <p class="statistics_text">only <b>0,3$</b> per game  insted of <del>$6.5</del> </p>
+                        <p class="info_text">Average win per month:</p>
+                        <p class="statistics_jackpot">$125,000</p>
+                        <a href="#" class="button statistics_button">Join for $10</a>
+                    </div>
+                </div>
+                <div class="page_item">
+                    <div class="item_account">
+                        <div class="account_logo">
+                           <img class="" src="assets/images/lottery_syndicate/tres-amigos.svg" alt="account_logo">
+                       </div>
+                        <h3 class="account_title">Three Amigos</h3>
+                        <p class="account_text">Group</p>
+                        <a href="syndicate-details-page.html" class="account_link">More Details</a>
+                    </div>
+                    <div class="item_content">
+                        <h2 class="content_title">Increases by <b> &nbsp;68% </b> &nbsp;
+                        <img src="assets/images/lottery_syndicate/green_arrow.svg" alt="arrow" class="arrow">  &nbsp; Your winning chance!!! </h2>
+                        <div class="content_information">
+                          <p class="info_text">Group includes:</p>
+                           <div class="info_item">
+                               <img src="assets/images/lottery_syndicate/mega.svg" alt="lott-mega" class="content_img">
+                                <p class="content_text"> <span class="content_number">240</span> <b>MegaMillions</b> lines shared with 30 members</p>
+                           </div>
+                           <div class="info_item">
+                               <img src="assets/images/lottery_syndicate/powerball.svg" alt="powerball" class="content_img">
+                                <p class="content_text"> <span class="content_number">240</span> <b> Powerball</b>  lines shared with 30 members</p>
+                           </div>
+                           <div class="info_item">
+                               <img src="assets/images/lottery_syndicate/superlotto.svg" alt="superlotto" class="content_img">
+                                <p class="content_text"> <span class="content_number">240</span> <b>SuperLotto Plus</b>  lines shared with 30 members</p>
+                           </div>
+                           <div class="info_item">
+                               <img src="assets/images/lottery_syndicate/lottomax.svg" alt="lottomax" class="content_img">
+                                <p class="content_text"> <span class="content_number">240</span> <b>LottoMax</b>  lines shared with 30 members</p>
+                           </div>
+
+
+                        </div>
+                    </div>
+                    <div class="item_statistics">
+                       <p class="info_text">Total jackpot:</p>
+                        <p class="statistics_jackpot">$325 000 000</p>
+                        <p class="statistics_text">only <b>0,3$</b> per game  insted of <del>$6.5</del> </p>
+                        <p class="info_text">Average win per month:</p>
+                        <p class="statistics_jackpot">$125,000</p>
+                            <a href="#" class="button statistics_button">Join for $10</a>
+                    </div>
+                </div>
+                <div class="page_item">
+                    <div class="item_account">
+                        <div class="account_logo">
+                           <img class="" src="assets/images/lottery_syndicate/oksana.svg" alt="account_logo">
+                       </div>
+                        <h3 class="account_title">oksana</h3>
+                        <p class="account_text">Group</p>
+                        <a href="syndicate-details-page.html" class="account_link">More Details</a>
+                    </div>
+                    <div class="item_content">
+                        <h2 class="content_title">Increases by <b> &nbsp;68% </b> &nbsp;
+                        <img src="assets/images/lottery_syndicate/green_arrow.svg" alt="arrow" class="arrow">  &nbsp; Your winning chance!!! </h2>
+                        <div class="content_information">
+                          <p class="info_text">Group includes:</p>
+                           <div class="info_item">
+                               <img src="assets/images/lottery_syndicate/mega.svg" alt="lotto-mega" class="content_img">
+                                <p class="content_text"> <span class="content_number">240</span> <b>MegaMillions</b> lines shared with 30 members</p>
+                           </div>
+
+                        </div>
+                    </div>
+                    <div class="item_statistics">
+                       <p class="info_text">Total jackpot:</p>
+                        <p class="statistics_jackpot">$325 000 000</p>
+                        <p class="statistics_text">only <b>0,3$</b> per game  insted of <del>$6.5</del> </p>
+                        <p class="info_text">Average win per month:</p>
+                        <p class="statistics_jackpot">$125,000</p>
+                        <a href="#" class="button statistics_button">Join for $10</a>
+                    </div>
+                </div>
+                <div class="page_item">
+                    <div class="item_account">
+                        <div class="account_logo">
+                           <img class="" src="assets/images/lottery_syndicate/misha.svg" alt="account_logo">
+                       </div>
+                        <h3 class="account_title">misha</h3>
+                        <p class="account_text">Group</p>
+                        <a href="syndicate-details-page.html" class="account_link">More Details</a>
+                    </div>
+                    <div class="item_content">
+                        <h2 class="content_title">Increases by <b> &nbsp;68% </b> &nbsp;
+                        <img src="assets/images/lottery_syndicate/green_arrow.svg" alt="arrow" class="arrow">  &nbsp; Your winning chance!!! </h2>
+                        <div class="content_information">
+                          <p class="info_text">Group includes:</p>
+                           <div class="info_item">
+                               <img src="assets/images/lottery_syndicate/lotto.svg" alt="lotto" class="content_img">
+                                <p class="content_text"> <span class="content_number">240</span> <b>Lotto</b> lines shared with 30 members</p>
+                           </div>
+                           <div class="info_item">
+                               <img src="assets/images/lottery_syndicate/primitiva.svg" alt="lotto" class="content_img">
+                                <p class="content_text"> <span class="content_number">240</span> <b> La Primitiva</b>  lines shared with 30 members</p>
+                           </div>
+
+                        </div>
+                    </div>
+                    <div class="item_statistics">
+                       <p class="info_text">Total jackpot:</p>
+                        <p class="statistics_jackpot">$325 000 000</p>
+                        <p class="statistics_text">only <b>0,3$</b> per game  insted of <del>$6.5</del> </p>
+                        <p class="info_text">Average win per month:</p>
+                        <p class="statistics_jackpot">$125,000</p>
+                        <a href="#" class="button statistics_button">Join for $10</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+          <div class="pagination">
+             <div class="container">
+                <div class="pagination_inner">
+                     <div class="pagination_item">
+                      <a href="#" class="pagination_link">
+                          <img src="assets/images/lottery_syndicate/chevron-double-left.svg" alt="chevron-double-left">
+                          <p class="pagination_text">Previous</p></a>
+                      </div>
+                      <div class="pagination_item">
+                          <a href="#" class="pagination_link">
+                              <p class="pagination_text">Next</p>
+                              <img src="assets/images/lottery_syndicate/chevron-double-right.svg" alt="chevron-double-right"></a>
+
+                      </div>
+                </div>
+             </div>
+
+          </div>
+
+
+       <section class="question question_syndicate">
+        <div class="container">
+            <div class="question_inner">
+
+                <h4 class="question_title">FREQUENTLY ASKED QUESTION (F.A.Q.)</h4>
+
+                <div class="accordion">
+                <div class="accordion_item" data-collapse="#accordion_1">
+                    <div class="accordion_header">
+                        <div class="accordion_title">What is a Lottery Detting Syndicate?</div>
+                    </div>
+                    <div class="accordion_content" id="accordion_1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+
+                <div class="accordion_item" data-collapse="#accordion_2">
+                    <div class="accordion_header">
+                        <div class="accordion_title">I Iow do Syndicates work?</div>
+                    </div>
+                    <div class="accordion_content" id="accordion_2">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+
+                <div class="accordion_item" data-collapse="#accordion_3">
+                    <div class="accordion_header">
+                        <div class="accordion_title">I Iow Do Win With A Lotto and Syndicate?</div>
+                    </div>
+                    <div class="accordion_content" id="accordion_3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                <div class="accordion_item" data-collapse="#accordion_4">
+                    <div class="accordion_header">
+                        <div class="accordion_title">I Iow do I place a Syndicate bet?</div>
+                    </div>
+                    <div class="accordion_content" id="accordion_4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                <div class="accordion_item" data-collapse="#accordion_5">
+                    <div class="accordion_header">
+                        <div class="accordion_title">How much does it cost?</div>
+                    </div>
+                    <div class="accordion_content" id="accordion_5">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                <div class="accordion_item" data-collapse="#accordion_6">
+                    <div class="accordion_header">
+                        <div class="accordion_title">Is the payout quaranteed? How do I know?</div>
+                    </div>
+                    <div class="accordion_content" id="accordion_6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+               <div class="footer_social">
+                   <div class="social_left">
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/whatsapp.svg" alt="whatsapp" class="social_img">
+                        </a>
+                       <div class="social_text">
+                           <h5 class="social_title">Live chat by WhatsApp</h5>
+                           <p class="sosial_subtitle">Customer Service</p>
+                       </div>
+                   </div>
+                   <div class="social_right">
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/facebook.svg" alt="facebook" class="social_img">
+                        </a>
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/twitter.svg" alt="twitter" class="social_img">
+                        </a>
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/facebook-messenger.svg" alt="messenger" class="social_img">
+                        </a>
+                   </div>
+               </div>
+               <div class="footer_info">
+                    <div class="footer_col first_col">
+                        <h5 class="footer_title">USEFUL LINKS</h5>
+                        <div class="footer_links">
+                           <div class="col_links">
+                               <a href="" class="footer_link home_link">Home</a>
+                                <a href="" class="footer_link">Lottery Results & Winners</a>
+                                <a href="" class="footer_link">Lottery Promotions</a>
+                                <a href="" class="footer_link">About Us</a>
+                                <a href="" class="footer_link">Contact Us</a>
+                           </div>
+
+                            <div class="col_links second_col_links">
+                                <a href="" class="footer_link">Terms & Conditions</a>
+                                <a href="" class="footer_link">Security</a>
+                                <a href="" class="footer_link">Privacy Policy</a>
+                                <a href="" class="footer_link">Acceptable Use Policy</a>
+                                <a href="" class="footer_link">Website Use Policy</a>
+                                <a href="" class="footer_link">Affiliate program</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer_col second_col">
+                        <h5 class="footer_title second_col_title">SMARTWINNERS</h5>
+                        <p class="footer_text">The trade name SmartWinners and all content on this website is a copyright of SmartWinners Limited. All rights reserved. We are an independent lottery ticket purchasing service. We are not affiliated with nor are we endorsed by any State sanctioned lottery organization. We make no claims on our site to be such. </p>
+                        <p class="footer_address">Our registered business address is <br> Unit 6158, PO Box 6945, London, W1A 6US, United Kingdom.</p>
+                    </div>
+
+                    <div class="footer_col third_col">
+                       <div class="third_col_group">
+                           <h5 class="footer_title payment_title">PAYMENT METHODS</h5>
+                        <div class="pay_methots">
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Visa-dark.svg" alt="Visa" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/MasterCard-dark.svg" alt="MasterCard" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Maestro-dark.svg" alt="Maestro" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/DinersClub-dark.svg" alt="DinersClub" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Skrill-dark.svg" alt="Skrill" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Bitcoin-dark.svg" alt="Bitcoin" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/qiwi%201.svg" alt="qiwi" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/hsbc%201.svg" alt="hsbc" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/litecoin%201.svg" alt="litecoin" class="footer_img">
+                            </a>
+                        </div>
+                       </div>
+
+                        <div class="third_col_group">
+                            <h5 class="footer_title security_title">SECURITY & TRUST</h5>
+                            <div class="footer_security">
+                                <a href="#" class="footer_link">
+                                    <img src="assets/images/contacts/ctv_1.svg" alt="security" class="footer_img">
+                                </a>
+                                <a href="#" class="footer_link">
+                                    <img src="assets/images/contacts/comodo_1.svg" alt="comodo" class="footer_img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

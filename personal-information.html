@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Winners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+
+    <header class="header">
+           <div class="container">
+                <div class="header_inner">
+                     <div class="header_item">
+                          <button class="nav-toggle" id="nav_toggle" type="button">
+                              <span class="nav-toggle__item">Menu</span>
+                          </button>
+                          <a href="index.html" class="header_logo">
+                             <img src="assets/images/logo.svg" alt="logo">
+                          </a>
+                          <div class="mobil_acount">
+                                  <a href="sign-in.html" class="mobil_acount_link">
+                                      <img src="assets/images/avatar.svg" alt="avatar_logo" class="mobil_acount_img">
+                                  </a>
+                              </div>
+                          <div class="header_account">
+                              <div class="account_name">
+                                 Welcome <b>Roma</b> &mdash; <a href="welcome.html" class="acount_logout">Logout</a>
+                              </div>
+                              <div class="account_balance">
+                          Your balanse: <b>P 0,00</b>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="header_item social">
+                          <div class="header_social">
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/facebook.svg" alt="facebook" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/twitter.svg" alt="twitter" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                  <a href="#" class="header_social_link">
+                                      <img src="assets/images/contacts/facebook-messenger.svg" alt="messenger" class="header_social_img">
+                                  </a>
+                              </div>
+                              <div class="header_social_item">
+                                   <a href="#" class="header_social_link">
+                                       <img src="assets/images/contacts/whatsapp.svg" alt="whatsapp" class="header_social_img">
+                                   </a>
+                              </div>
+                          </div>
+                          <dl id="sample" class="dropdown">
+                        <dt>
+                            <a>
+                                <img class="flag" src="assets/images/country/USA.svg" alt="">English
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/USA.svg" alt="">English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Francais.svg" alt="">Français
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Germany.svg" alt="">Deutsch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Italy.svg" alt="">Italiano
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Russia.svg" alt="">Русский
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Spain.svg" alt="">Español
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Ukraine.svg" alt="">Українська
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                      </div>
+                </div>
+
+                <div class="header_nav">
+                    <nav class="nav">
+                        <a class="nav_link" href="index.html" data-scroll="#">Home</a>
+                        <a class="nav_link" href="all-lotteries.html" data-scroll="#">Play all lottery</a>
+                        <a class="nav_link" href="lottery-group.html" data-scroll="#">Lottery groups</a>
+                       <a class="nav_link" href="promotions.html" data-scroll="#">Promotions</a>
+                    </nav>
+                    <div class="account">
+                        <a class="nav_link" href="sign-in.html" data-scroll="#">My account</a>
+                    </div>
+                </div>
+          </div>
+    </header>
+
+
+    <main class="page">
+        <div class="container">
+            <div class="personal_information">
+                <a href="#" class="payment_back personal_back" style="display: none;">Back</a>
+                <h1 class="personal_information_title">EDIT YOUR PERSONAL INFORMATION</h1>
+                <button class="button_back"> back</button>
+
+                <div class="personal_information_inner">
+                    <div class="personal_information_left">
+                        <div class="information_item active" id="personal_information">
+                            <p class="information_text">PERSONAL INFORMATION</p>
+                        </div>
+                        <div class="information_item" id="address_information">
+                            <p class="information_text">ADDRESS INFORMATION</p>
+                        </div>
+                        <div class="information_item" id="login_information">
+                            <p class="information_text">LOGIN INFORMATION</p>
+                        </div>
+                        <div class="information_item" id="card_information">
+                            <p class="information_text">Saved Credit cards</p>
+                        </div>
+                    </div>
+
+                    <div class="personal_information_right">
+
+                        <a href="#" class="personal_help_link">Need help?</a>
+
+                        <form action="#" class="information_form" id="personal_information_form">
+                            <p class="subtitle_form">PERSONAL INFORMATION</p>
+                            <p class="form_text">Name:</p>
+                            <input type="text" class="personal_input" id="personal_name" required="required" placeholder="">
+                            <p class="form_text">Last Name:</p>
+                            <input type="text" class="personal_input" id="personal_last_name" required="required" placeholder="">
+                            <p class="form_text">Birthday</p>
+                            <div class="flex_box direction_column">
+                              <div class="selected_wrap personal_selected">
+                                  <select name="day" class="personal_input personal_date" id="personal_day">
+                                       <option value="day" selected disabled>Day</option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                       <option value="5">5</option>
+                                       <option value="6">6</option>
+                                       <option value="7">7</option>
+                                       <option value="8">8</option>
+                                       <option value="9">9</option>
+                                       <option value="10">10</option>
+                                       <option value="11">11</option>
+                                       <option value="12">12</option>
+                                       <option value="13">13</option>
+                                       <option value="14">14</option>
+                                       <option value="15">15</option>
+                                       <option value="16">16</option>
+                                       <option value="17">17</option>
+                                       <option value="18">18</option>
+                                       <option value="19">19</option>
+                                       <option value="20">20</option>
+                                       <option value="21">21</option>
+                                       <option value="22">22</option>
+                                       <option value="23">23</option>
+                                       <option value="24">24</option>
+                                       <option value="25">25</option>
+                                       <option value="26">26</option>
+                                       <option value="27">27</option>
+                                       <option value="28">28</option>
+                                       <option value="29">29</option>
+                                       <option value="30">30</option>
+                                       <option value="31">31</option>
+                                   </select>
+                              </div>
+
+                               <div class="selected_wrap personal_selected">
+                                   <select name="day" class="personal_input personal_date" id="personal_month">
+                                   <option value="month" selected disabled>Month</option>
+                                   <option value="January">January</option>
+                                   <option value="February">February</option>
+                                   <option value="March">March</option>
+                                   <option value="April">April</option>
+                                   <option value="May">May</option>
+                                   <option value="June">June</option>
+                                   <option value="July">July</option>
+                                   <option value="August">August</option>
+                                   <option value="September">September</option>
+                                   <option value="October">October</option>
+                                   <option value="November">November</option>
+                                   <option value="December">December</option>
+                               </select>
+                               </div>
+
+                               <div class="selected_wrap personal_selected">
+                                   <select name="year" class="personal_input personal_date" id="personal_year">
+                                       <option value="year" selected  disabled>Year</option>
+                                       <option value="2002">2002</option>
+                                       <option value="2001">2001</option>
+                                       <option value="2000">2000</option>
+                                       <option value="1999">1999</option>
+                                       <option value="1998">1998</option>
+                                       <option value="1997">1997</option>
+                                       <option value="1996">1996</option>
+                                       <option value="1995">1995</option>
+                                       <option value="1994">1994</option>
+                                       <option value="1993">1993</option>
+                                       <option value="1992">1992</option>
+                                       <option value="1991">1991</option>
+                                       <option value="1990">1990</option>
+                                       <option value="1989">1989</option>
+                                       <option value="1988">1988</option>
+                                       <option value="1987">1987</option>
+                                       <option value="1986">1986</option>
+                                       <option value="1985">1985</option>
+                                       <option value="1984">1984</option>
+                                       <option value="1983">1983</option>
+                                       <option value="1982">1982</option>
+                                       <option value="1981">1981</option>
+                                       <option value="1980">1980</option>
+                                   </select>
+                               </div>
+                            </div>
+                            <div class="flex_box mobil_row">
+                                <p class="form_text box_text">Phone number </p>
+                                <p class="card_information_text not_verified">Not Verified</p>
+                            </div>
+                            <div class="phone_box">
+                               <div class="country_code">
+                      <dl id="sample" class="dropdown">
+                        <dt>
+                            <a>
+                                <img class="flag" src="assets/images/country/USA.svg" alt="">+1
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                               <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/USA.svg" alt="">+1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/UK.svg" alt="">+44
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Canada.svg" alt="">+1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Australia.svg" alt="">+61
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Francais.svg" alt="">+33
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Germany.svg" alt="">+49
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Italy.svg" alt="">+39
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Russia.svg" alt="">+7
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Spain.svg" alt="">+34
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Ukraine.svg" alt="">+380
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/USA.svg" alt="">+1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/UK.svg" alt="">+44
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Canada.svg" alt="">+1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Australia.svg" alt="">+61
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Francais.svg" alt="">+33
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Germany.svg" alt="">+49
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Italy.svg" alt="">+39
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Russia.svg" alt="">+7
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Spain.svg" alt="">+34
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Ukraine.svg" alt="">+380
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    </div>
+                                <input type="number" class="personal_input" id="personal_phone_number" required="required" placeholder="">
+                            </div>
+                            <div class="flex_box mobil_row">
+                                <p class="form_text box_text">E-mail:</p>
+                                <p class="card_information_text verified">Verified</p>
+                            </div>
+                            <input type="email" class="personal_input" id="personal_email" required="required" placeholder="">
+                            <input type="submit" class="button personal_button" id="personal_change" value="change">
+                        </form>
+
+                        <form action="#" class="information_form" id="address_information_form">
+                           <p class="subtitle_form">ADDRESS INFORMATION</p>
+                            <p class="form_text">Street:</p>
+                            <input type="text" class="personal_input" id="personal_street" required="required" placeholder="">
+                            <p class="form_text">City:</p>
+                            <input type="text" class="personal_input" id="personal_city" required="required" placeholder="">
+                            <p class="form_text">ZIP/Post Code</p>
+                            <input type="number" class="personal_input" id="personal_post_code" required="required" placeholder="">
+                            <p class="form_text">State:</p>
+                            <input type="text" class="personal_input" id="personal_state" required="required" placeholder="">
+                            <p class="form_text">Country:</p>
+                            <div class="selected_wrap">
+                                       <select name="country" class="personal_input" id="personal_country">
+                                           <option value="country" selected  disabled></option>
+                                           <option value="USA">USA</option>
+                                           <option value="Germany">Germany</option>
+                                           <option value="Italy">Italy</option>
+                                           <option value="French">French</option>
+                                           <option value="Poland">Poland</option>
+                                           <option value="Ukraine">Ukraine</option>
+                                           <option value="Canada">Canada</option>
+                                           <option value="Rassia">Rassia</option>
+
+                                       </select>
+                                   </div>
+                            <input type="submit" class="button personal_button" id="address_change" value="change">
+                        </form>
+
+                        <form action="#" class="information_form" id="login_information_form">
+                           <p class="subtitle_form">LOGIN INFORMATION</p>
+                            <div class="flex_box mobil_row">
+                                <p class="form_text login_text">Phone number </p>
+                                <p class="card_information_text not_verified">Not Verified</p>
+                            </div>
+                            <div class="phone_box ">
+                                <div class="country_code">
+                      <dl id="sample" class="dropdown">
+                        <dt>
+                            <a>
+                                <img class="flag" src="assets/images/country/USA.svg" alt="">+1
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                               <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/USA.svg" alt="">+1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/UK.svg" alt="">+44
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Canada.svg" alt="">+1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Australia.svg" alt="">+61
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Francais.svg" alt="">+33
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Germany.svg" alt="">+49
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Italy.svg" alt="">+39
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Russia.svg" alt="">+7
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Spain.svg" alt="">+34
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Ukraine.svg" alt="">+380
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/USA.svg" alt="">+1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/UK.svg" alt="">+44
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Canada.svg" alt="">+1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Australia.svg" alt="">+61
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Francais.svg" alt="">+33
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Germany.svg" alt="">+49
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Italy.svg" alt="">+39
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Russia.svg" alt="">+7
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Spain.svg" alt="">+34
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img class="flag" src="assets/images/country/Ukraine.svg" alt="">+380
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    </div>
+                                <input type="number" class="personal_input" id="personal_login_number" required="required" placeholder="Your phone number ">
+                            </div>
+                            <p class="form_text">Password:</p>
+                            <input type="password" class="personal_input" id="personal_password" required="required" placeholder="********">
+                            <p class="pasword_text personal_pasword_text">Passwords must be at least 6 characters</p>
+                            <p class="form_text">Re-enter password:</p>
+                            <input type="password" class="personal_input" id="personal_re-enter_password" required="required" placeholder="">
+
+                            <div class="checbox">
+                                <label class="checkbox_label" for="checkbox_1">Receive updates notifications:</label>
+                                <input type="checkbox" class="checkbox_input" id="checkbox_1" required="required">
+                            </div>
+
+                            <input type="submit" class="button personal_button" id="change" value="change">
+                        </form>
+
+                        <div id="card_information_empty">
+                           <p class="subtitle_form">Saved Credit cards</p>
+                            <p class="form_text card_text">You don't have any saved cards</p>
+                            <a href="#" class="add_card_link">Add a new credit card</a>
+                        </div>
+
+                        <form action="#" class="information_form" id="card_information_form">
+                            <h2 class="personal_information_title add_card_title">Add a credit card</h2>
+                            <p class="form_text">Card Holder</p>
+                            <input type="text" class="personal_input" id="personal_card_name" required="required" placeholder="">
+
+                            <div class="select_card">
+                                <div class="select">
+                                    <div class="select_body">
+                                        <div class="select_option" id="first">
+                                            <img src="assets/images/card-logo.svg" alt="card-logo" class="select_img">
+                                        </div>
+                                        <div class="select_option" id="second">
+                                            <img src="assets/images/contacts/Visa-dark.svg" alt="card-logo" class="select_img">
+                                        </div>
+                                        <div class="select_option" id="third">
+                                            <img src="assets/images/contacts/Maestro-dark.svg" alt="card-logo" class="select_img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="form_text">Card Number</p>
+                            <input type="number" class="personal_input" id="personal_card_number" required="required" placeholder="">
+                            </div>
+
+                            <div class="flex_box valid_column">
+                                <div class="valid_until">
+                                   <p class="form_text">Valid until</p>
+                                    <div class="flex_box direction_column">
+                                        <div class="selected_wrap personal_selected">
+                                       <select name="month" class="personal_input personal_date" id="personal_card_month">
+                                       <option value="month" selected disabled>Month</option>
+                                       <option value="January">January</option>
+                                       <option value="February">February</option>
+                                       <option value="March">March</option>
+                                       <option value="April">April</option>
+                                       <option value="May">May</option>
+                                       <option value="June">June</option>
+                                       <option value="July">July</option>
+                                       <option value="August">August</option>
+                                       <option value="September">September</option>
+                                       <option value="October">October</option>
+                                       <option value="November">November</option>
+                                       <option value="December">December</option>
+                                   </select>
+                                   </div>
+
+                                   <div class="selected_wrap personal_selected">
+                                       <select name="year" class="personal_input personal_date" id="personal_card_year">
+                                           <option value="year" selected  disabled>Year</option>
+                                           <option value="2025">2025</option>
+                                           <option value="2024">2024</option>
+                                           <option value="2023">2023</option>
+                                           <option value="2022">2022</option>
+                                           <option value="2021">2021</option>
+                                           <option value="2020">2020</option>
+                                           <option value="2019">2019</option>
+                                           <option value="2018">2018</option>
+                                           <option value="2017">2017</option>
+                                           <option value="2016">2016</option>
+                                           <option value="2015">2015</option>
+
+                                       </select>
+                                   </div>
+                                    </div>
+
+                                </div>
+                                <div class="cvv">
+                                    <p class="form_text">CVV (?)</p>
+                                    <input type="number" class="personal_input personal_date" id="personal_cvv" required="required" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="checkbox_card_information">
+                               <input type="checkbox" class="checkbox_input" id="checkbox_card" required="required">
+                                <label class="checkbox_label_card" for="checkbox_card">We will charge 1$ to make sure the card is correct, the money will be credited to your account</label>
+
+                            </div>
+                            <div class="flex_box direction_column">
+                                <input type="submit" class="button personal_button card_information_button" id="add_card" value="Add credit card">
+                                <input type="submit" class="button personal_button" id="pesonal_cancel" value="cancel">
+                            </div>
+
+                        </form>
+
+                        <div id="card_information_filled">
+                            <p class="form_text ">Сredit card:</p>
+                            <div class="card_information_item">
+                                <div class="card_information_desc">
+                                    <div class="card_information_logo">
+                                        <img class="card_information_img" src="assets/images/contacts/Maestro-dark.svg" alt="card-logo">
+                                    </div>
+                                    <p class="card_information_name">MASTERCARD PLATINUM
+(•••• 2505)</p>
+                                </div>
+                                <p class="card_information_text verified">Verified</p>
+                                <p class="card_information_text default">Default</p>
+                                <div class="card_information_logo">
+                                    <img class="card_information_img" src="assets/images/delete.svg" alt="delete">
+                                </div>
+                            </div>
+                            <div class="card_information_item">
+                                <div class="card_information_desc">
+                                    <div class="card_information_logo">
+                                        <img class="card_information_img" src="assets/images/contacts/MasterCard-dark.svg" alt="card-logo">
+                                    </div>
+                                    <p class="card_information_name">MASTERCARD PLATINUM
+(•••• 1732)</p>
+                                </div>
+                                <p class="card_information_text not_verified">Not Verified</p>
+                                <p class="card_information_text ">Set Default</p>
+                                <div class="card_information_logo">
+                                    <img class="card_information_img" src="assets/images/delete.svg" alt="delete">
+                                </div>
+                            </div>
+                            <a href="#" class="add_card_link add_card">Add a new credit card</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+<section class="lottery">
+           <h3 class="lottery_title">BIGGEST UPCOMING LOTTERY DRAWS</h3>
+           <div class="lottery_inner">
+                <div class="lottery_item">
+                    <div class="lottery_top">
+                        <div class="lottery_img">
+                            <img src="assets/images/lotto-oz.svg" alt="lotto-oz">
+                        </div>
+                        <div class="lottery_info">
+                            <div class="lottery_content">
+                                <img src="assets/images/country.svg" alt="country" class="flag">
+                                <span class="lottery_description">Mega Millions</span>
+                            </div>
+                            <div class="price">$94 000 000</div>
+                        </div>
+                    </div>
+                    <div class="lottery_bottom">
+                        <a href="promo-picker.html" class="button">Play Now</a>
+                        <div class="timer">
+                            <img src="assets/images/alarm-white.svg" alt="clock">
+                            <span class="time">1:22:01</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lottery_item">
+                    <div class="lottery_top">
+                        <div class="lottery_img">
+                            <img src="assets/images/lotto-mega.svg" alt="lotto-oz">
+                        </div>
+                        <div class="lottery_info">
+                            <div class="lottery_content">
+                                <img src="assets/images/country.svg" alt="country" class="flag">
+                                <span class="lottery_description">Mega Millions</span>
+                            </div>
+                            <div class="price">$94 000 000</div>
+                        </div>
+                    </div>
+                    <div class="lottery_bottom">
+                        <a href="promo-picker.html" class="button">Play Now</a>
+                        <div class="timer">
+                            <img src="assets/images/alarm-white.svg" alt="clock">
+                            <span class="time">1:22:01</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lottery_item">
+                    <div class="lottery_top">
+                        <div class="lottery_img">
+                            <img src="assets/images/lotto-power.svg" alt="lotto-oz">
+                        </div>
+                        <div class="lottery_info">
+                            <div class="lottery_content">
+                                <img src="assets/images/country.svg" alt="country" class="flag">
+                                <span class="lottery_description">Mega Millions</span>
+                            </div>
+                            <div class="price">$94 000 000</div>
+                        </div>
+                    </div>
+                    <div class="lottery_bottom">
+                        <a href="promo-picker.html" class="button">Play Now</a>
+                        <div class="timer">
+                            <img src="assets/images/alarm-white.svg" alt="clock">
+                            <span class="time">1:22:01</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+               <div class="footer_social">
+                   <div class="social_left">
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/whatsapp.svg" alt="whatsapp" class="social_img">
+                        </a>
+                       <div class="social_text">
+                           <h5 class="social_title">Live chat by WhatsApp</h5>
+                           <p class="sosial_subtitle">Customer Service</p>
+                       </div>
+                   </div>
+                   <div class="social_right">
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/facebook.svg" alt="facebook" class="social_img">
+                        </a>
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/twitter.svg" alt="twitter" class="social_img">
+                        </a>
+                        <a href="#" class="social_link">
+                            <img src="assets/images/contacts/facebook-messenger.svg" alt="messenger" class="social_img">
+                        </a>
+                   </div>
+               </div>
+               <div class="footer_info">
+                    <div class="footer_col first_col">
+                        <h5 class="footer_title">USEFUL LINKS</h5>
+                        <div class="footer_links">
+                           <div class="col_links">
+                               <a href="" class="footer_link home_link">Home</a>
+                                <a href="" class="footer_link">Lottery Results & Winners</a>
+                                <a href="" class="footer_link">Lottery Promotions</a>
+                                <a href="" class="footer_link">About Us</a>
+                                <a href="" class="footer_link">Contact Us</a>
+                           </div>
+
+                            <div class="col_links second_col_links">
+                                <a href="" class="footer_link">Terms & Conditions</a>
+                                <a href="" class="footer_link">Security</a>
+                                <a href="" class="footer_link">Privacy Policy</a>
+                                <a href="" class="footer_link">Acceptable Use Policy</a>
+                                <a href="" class="footer_link">Website Use Policy</a>
+                                <a href="" class="footer_link">Affiliate program</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer_col second_col">
+                        <h5 class="footer_title second_col_title">SMARTWINNERS</h5>
+                        <p class="footer_text">The trade name SmartWinners and all content on this website is a copyright of SmartWinners Limited. All rights reserved. We are an independent lottery ticket purchasing service. We are not affiliated with nor are we endorsed by any State sanctioned lottery organization. We make no claims on our site to be such. </p>
+                        <p class="footer_address">Our registered business address is <br> Unit 6158, PO Box 6945, London, W1A 6US, United Kingdom.</p>
+                    </div>
+
+                    <div class="footer_col third_col">
+                       <div class="third_col_group">
+                           <h5 class="footer_title payment_title">PAYMENT METHODS</h5>
+                        <div class="pay_methots">
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Visa-dark.svg" alt="Visa" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/MasterCard-dark.svg" alt="MasterCard" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Maestro-dark.svg" alt="Maestro" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/DinersClub-dark.svg" alt="DinersClub" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Skrill-dark.svg" alt="Skrill" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/Bitcoin-dark.svg" alt="Bitcoin" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/qiwi%201.svg" alt="qiwi" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/hsbc%201.svg" alt="hsbc" class="footer_img">
+                            </a>
+                            <a href="#" class="pay_link">
+                                <img src="assets/images/contacts/litecoin%201.svg" alt="litecoin" class="footer_img">
+                            </a>
+                        </div>
+                       </div>
+
+                        <div class="third_col_group">
+                            <h5 class="footer_title security_title">SECURITY & TRUST</h5>
+                            <div class="footer_security">
+                                <a href="#" class="footer_link">
+                                    <img src="assets/images/contacts/ctv_1.svg" alt="security" class="footer_img">
+                                </a>
+                                <a href="#" class="footer_link">
+                                    <img src="assets/images/contacts/comodo_1.svg" alt="comodo" class="footer_img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+

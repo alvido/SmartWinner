@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Winners</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+    <link rel="stylesheet" href="assets/css/game.css">
+</head>
+
+<body>
+
+
+    <section class="game__section">
+        <div class="container">
+            <div class="game__wraper">
+                <img class="game__header--img" src="assets/images/120_70.png" alt="">
+                <h1 class="game__title">3 צאנס</h1>
+                <p class="game__subtitle">СЫГРАТЬ В ЛОТЕРЕЮ ШАНС ОНЛАЙН</p>
+                <p class="game__text">СЛЕДУЮЩИЙ ДЖЕКПОТ</p>
+                <p class="game__ads color--blue">$273 000 000</p>
+                <p class="game__text">Розыгрыш: <span>Wed 19.10.2022</span> </p>
+                <div class="game__timer">
+                    <img src="assets/images/clock_red.png" alt="" class="timer_logo">
+                    <p class="game__ads color--red">3d 7:27:09 <span>#92840</span></p>
+                </div>
+
+                <ul class="game__lines--list">
+                    <audio id="selectingnumber">
+                        <source src="assets/sound/selectedNumber.mp3" type="audio/mpeg">
+                        <source src="assets/sound/selectedNumber.mp3" type="audio/wav">
+                    </audio>
+                    <audio id="selectinglines">
+                        <source src="assets/sound/RemoveSelectionLine.mp3" type="audio/mpeg">
+                        <source src="assets/sound/RemoveSelectionLine.mp3" type="audio/wav">
+                    </audio>
+                    <li class="game__lines--item">
+                        <div class="game__lines--wrap">
+                            <span class="game__lines--text">Line 1:</span>
+                            <ul class="game__lines--cards">
+                                <li class="cards"><em class="spades"></em><i></i></li>
+                                <li class="cards"><em class="hearts"></em><i></i></li>
+                                <li class="cards"><em class="clubs"></em><i></i></li>
+                                <li class="cards"><em class="diamonds"></em><i></i></li>
+                            </ul>
+                            <button class="lines__clear">Clear Line</button>
+                        </div>
+
+                        <div class="chance">
+                            <ul class="chance__list">
+                                <div class="suit"><em class="spades"></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                            <ul class="chance__list">
+                                <div class="suit"><em class="hearts "></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                            <ul class="chance__list">
+                                <div class="suit"><em class="clubs "></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                            <ul class="chance__list">
+                                <div class="suit"><em class="diamonds "></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="game__lines--item">
+                        <div class="game__lines--wrap">
+                            <span class="game__lines--text">Line 2:</span>
+                            <ul class="game__lines--cards">
+                                <li class="cards"><em class="spades"></em><i></i></li>
+                                <li class="cards"><em class="hearts"></em><i></i></li>
+                                <li class="cards"><em class="clubs"></em><i></i></li>
+                                <li class="cards"><em class="diamonds"></em><i></i></li>
+                            </ul>
+                            <button class="lines__clear">Clear Line</button>
+                        </div>
+                        <div class="chance">
+                            <ul class="chance__list">
+                                <div class="suit"><em class="spades"></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                            <ul class="chance__list">
+                                <div class="suit"><em class="hearts "></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                            <ul class="chance__list">
+                                <div class="suit"><em class="clubs "></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                            <ul class="chance__list">
+                                <div class="suit"><em class="diamonds "></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="game__lines--item">
+                        <div class="game__lines--wrap">
+                            <span class="game__lines--text">Line 3:</span>
+                            <ul class="game__lines--cards">
+                                <li class="cards"><em class="spades"></em><i></i></li>
+                                <li class="cards"><em class="hearts"></em><i></i></li>
+                                <li class="cards"><em class="clubs"></em><i></i></li>
+                                <li class="cards"><em class="diamonds"></em><i></i></li>
+                            </ul>
+                            <button class="lines__clear">Clear Line</button>
+                        </div>
+                        <div class="chance">
+                            <ul class="chance__list">
+                                <div class="suit"><em class="spades"></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                            <ul class="chance__list">
+                                <div class="suit"><em class="hearts "></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                            <ul class="chance__list">
+                                <div class="suit"><em class="clubs "></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                            <ul class="chance__list">
+                                <div class="suit"><em class="diamonds "></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="game__lines--item">
+                        <div class="game__lines--wrap">
+                            <span class="game__lines--text">Line 4:</span>
+                            <ul class="game__lines--cards">
+                                <li class="cards"><em class="spades"></em><i></i></li>
+                                <li class="cards"><em class="hearts"></em><i></i></li>
+                                <li class="cards"><em class="clubs"></em><i></i></li>
+                                <li class="cards"><em class="diamonds"></em><i></i></li>
+                            </ul>
+                            <button class="lines__clear">Clear Line</button>
+                        </div>
+                        <div class="chance">
+                            <ul class="chance__list">
+                                <div class="suit"><em class="spades"></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                            <ul class="chance__list">
+                                <div class="suit"><em class="hearts "></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                            <ul class="chance__list">
+                                <div class="suit"><em class="clubs "></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                            <ul class="chance__list">
+                                <div class="suit"><em class="diamonds "></em></div>
+                                <li class="chance__item">A</li>
+                                <li class="chance__item">K</li>
+                                <li class="chance__item">Q</li>
+                                <li class="chance__item">J</li>
+                                <li class="chance__item">10</li>
+                                <li class="chance__item">9</li>
+                                <li class="chance__item">8</li>
+                                <li class="chance__item">7</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="scissors">
+        <div class="handle-left"></div>
+        <div class="handle-right"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/game.js"></script>
+
+</body>
+
+</html>
